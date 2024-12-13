@@ -1,0 +1,170 @@
+/* Genel Sayfa Arka Planý */
+body {
+    background-color: #000; /* Siyah arka plan */
+    color: #fff; /* Beyaz metin rengi */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000; /* Tam siyah navbar */
+    padding: 15px 25px;
+    border-bottom: none; /* Navbar ile body arasýndaki çizgiyi kaldýr */
+    display: flex;
+    justify-content: center; /* Navbar'ý ortala */
+}
+
+/* Navbar Linkleri */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Navbar item'larýný ortala */
+    width: 100%;
+}
+
+    /* Navbar item boyutlarýný büyüt */
+    .navbar-nav .nav-link {
+        color: #fff !important; /* Navbar yazý rengi beyaz */
+        font-weight: 600; /* Font aðýrlýðýný artýr */
+        font-size: 1.5rem; /* Font boyutunu büyüt */
+        margin: 0 20px; /* Sol ve saðda 20px aralýk */
+        text-decoration: none; /* Buton gibi görmemesi için */
+    }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff; /* Hoverda mavi renk */
+            transform: scale(1.1); /* Hoverda büyüme efekti */
+        }
+
+/* Buton Stilleri */
+.navbar-buttons .btn {
+    color: #fff;
+    background-color: transparent; /* Buton arkaplaný transparan */
+    padding: 10px 20px;
+    border: none; /* Border yok */
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Geçiþ efektleri */
+}
+
+    .navbar-buttons .btn:hover {
+        border-radius: 15px;
+        background-color: #808080; /* Hoverda gri renk */
+        transform: translateY(-2px) scale(1.1); /* Hoverda büyüme efekti */
+    }
+
+/* Butonlarý Sað Tarafa Dayama */
+.navbar-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Footer */
+footer {
+    background-color: #111; /* Siyah zemin */
+    color: #ddd; /* Açýk gri yazý */
+    padding: 15px 0;
+    border-top: none; /* Footer ile body arasýndaki çizgiyi kaldýr */
+}
+
+    footer a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Mobil Görünüm (Media Query) */
+@media (max-width: 767px) {
+    /* Navbar Linkleri */
+    .navbar-nav {
+        flex-direction: column; /* Navbar item'larýný dikey sýralama */
+        width: 100%; /* Tam geniþlik */
+        text-align: center;
+        display: none; /* Ýlk baþta navbar gizli */
+    }
+
+        .navbar-nav.show {
+            display: flex; /* Toggler butonuyla göster */
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.2rem; /* Mobilde font boyutunu küçült */
+            margin: 10px 0; /* Yalnýzca üst ve alt aralýk */
+        }
+
+    /* Navbar butonlarýný ortala */
+    .navbar-buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Navbar Toggler Butonu */
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #fff; /* Toggler ikonu beyaz */
+    }
+
+    /* Footer */
+    footer {
+        text-align: center; /* Footer'ý ortala */
+    }
+}
+
+/* Tablet Görünümü (Media Query) */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        font-size: 1.3rem; /* Tablet görünümü için font büyüklüðü */
+    }
+}
+
+
+
+/* Hamburger Menü Ýkonunu Düzenleme */
+.navbar-toggler-icon {
+    width: 30px; /* Çizgilerin geniþliði */
+    height: 21px; /* Toplam yükseklik */
+    background-color: transparent; /* Çizgilerin rengini þeffaf yap */
+    position: relative; /* Konumlandýrma */
+}
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        position: absolute;
+        width: 100%; /* Çizgiler tam geniþlik */
+        height: 4px; /* Çizgilerin kalýnlýðý */
+        background-color: #fff; /* Çizgilerin rengi */
+        transition: all 0.3s ease;
+    }
+
+    /* Üst çizgi */
+    .navbar-toggler-icon::before {
+        top: 0; /* Üstten sýfýr mesafe */
+    }
+
+    /* Alt çizgi */
+    .navbar-toggler-icon::after {
+        bottom: 0; /* Alttan sýfýr mesafe */
+    }
+
+    /* Orta çizgi */
+    .navbar-toggler-icon span {
+        display: block;
+        position: absolute;
+        top: 50%; /* Ortalamak için */
+        left: 0;
+        width: 100%; /* Tam geniþlik */
+        height: 4px; /* Çizgilerin kalýnlýðý */
+        background-color: #fff; /* Çizgilerin rengi */
+        transform: translateY(-50%); /* Yatay ortalama */
+    }
