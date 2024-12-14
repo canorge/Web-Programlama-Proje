@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WebDeneme2.Models.Hizmet>
+
+@{
+    ViewData["Title"] = "Hizmetler";
+}
+
+<!-- Hizmetler Başlık -->
+<h1 class="hizmet-title">Hizmetler</h1>
+
+<!-- Hizmetler Container -->
+<div class="container-hizmet">
+    @foreach (var item in Model)
+    {
+        <div class="row mb-4 hizmet-row">
+            <!-- Resim Kısmı -->
+            <div class="col-md-6">
+                <img src="~/img/@item.Image" class="img-fluid hizmet-image" alt="@item.Ad">
+            </div>
+
+            <!-- Bilgi Kısmı -->
+            <div class="col-md-6 hizmet-info">
+                <h5 class="card-title">@item.Ad</h5>
+                <p class="card-text">@item.Aciklama</p>
+                <p><strong>Süre: </strong>@item.Sure dakika</p>
+                <p><strong>Ücret: </strong>@item.Ucret.ToString("C2")</p>
+                <a href="/Rezervasyon" class="btn btn-primary">Randevu Al</a>
+            </div>
+        </div>
+    }
+</div>

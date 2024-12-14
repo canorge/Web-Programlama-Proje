@@ -13,6 +13,46 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\OIP.jpg",
+      "PackagePath": "staticwebassets\\img\\OIP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\anasayfaresim.jpg",
+      "PackagePath": "staticwebassets\\img\\anasayfaresim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\hakkimizda.webp",
+      "PackagePath": "staticwebassets\\img\\hakkimizda.webp"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\kas.jpg",
+      "PackagePath": "staticwebassets\\img\\kas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sacbakim.jpg",
+      "PackagePath": "staticwebassets\\img\\sacbakim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sacboyama.jpg",
+      "PackagePath": "staticwebassets\\img\\sacboyama.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sackesim.jpg",
+      "PackagePath": "staticwebassets\\img\\sackesim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sakalbakim.jpg",
+      "PackagePath": "staticwebassets\\img\\sakalbakim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\vizyon-misyon.jpg",
+      "PackagePath": "staticwebassets\\img\\vizyon-misyon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\yuzbakim.jpg",
+      "PackagePath": "staticwebassets\\img\\yuzbakim.jpg"
+    },
+    {
       "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -26,12 +26,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Hakkimizda/Hakkimizda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFra2ltaXpkYVxIYWtraW1pemRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Hizmet/Hizmet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0XEhpem1ldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Shared/Error.cshtml]
