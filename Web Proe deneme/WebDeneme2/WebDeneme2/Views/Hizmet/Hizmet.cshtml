@@ -11,7 +11,7 @@
 <div class="container-hizmet">
     @foreach (var item in Model)
     {
-        <div class="row mb-4 hizmet-row">
+        <div class="row align-items-center g-2 mb-4 hizmet-row">
             <!-- Resim Kısmı -->
             <div class="col-md-6">
                 <img src="~/img/@item.Image" class="img-fluid hizmet-image" alt="@item.Ad">
@@ -23,7 +23,7 @@
                 <p class="card-text">@item.Aciklama</p>
                 <p><strong>Süre: </strong>@item.Sure dakika</p>
                 <p><strong>Ücret: </strong>@item.Ucret.ToString("C2")</p>
-                <a href="/Rezervasyon" class="btn btn-primary">Randevu Al</a>
+                <a href="/Rezervasyon" class="hizmetBtn">Randevu Al</a>
             </div>
         </div>
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0hSVd6J5hr3RkrAlEWHUlFX42M3noy8oaxSUzrBMKMk=",
+  "Hash": "UvNANKuxYIlrJ0IzrBGWfGjTykfew9Fc8+HBjXeunF8=",
   "Source": "WebDeneme2",
   "BasePath": "_content/WebDeneme2",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebDeneme2.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\hakkimzda.css",
+      "SourceId": "WebDeneme2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\",
+      "BasePath": "_content/WebDeneme2",
+      "RelativePath": "css/hakkimzda.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\hakkimzda.css"
     },
     {
       "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\site.css",
@@ -150,25 +169,6 @@
       "OriginalItemSpec": "wwwroot\\img\\kas.jpg"
     },
     {
-      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\OIP.jpg",
-      "SourceId": "WebDeneme2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\",
-      "BasePath": "_content/WebDeneme2",
-      "RelativePath": "img/OIP.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\OIP.jpg"
-    },
-    {
       "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sacbakim.jpg",
       "SourceId": "WebDeneme2",
       "SourceType": "Discovered",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\sakalbakim.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sakaltras.jpg",
+      "SourceId": "WebDeneme2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\",
+      "BasePath": "_content/WebDeneme2",
+      "RelativePath": "img/sakaltras.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\sakaltras.jpg"
     },
     {
       "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\vizyon-misyon.jpg",

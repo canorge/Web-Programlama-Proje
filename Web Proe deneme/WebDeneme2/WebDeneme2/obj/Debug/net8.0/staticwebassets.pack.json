@@ -5,16 +5,16 @@
       "PackagePath": "staticwebassets\\WebDeneme2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\hakkimzda.css",
+      "PackagePath": "staticwebassets\\css\\hakkimzda.css"
+    },
+    {
       "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
-      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\OIP.jpg",
-      "PackagePath": "staticwebassets\\img\\OIP.jpg"
     },
     {
       "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\anasayfaresim.jpg",
@@ -43,6 +43,10 @@
     {
       "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sakalbakim.jpg",
       "PackagePath": "staticwebassets\\img\\sakalbakim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sakaltras.jpg",
+      "PackagePath": "staticwebassets\\img\\sakaltras.jpg"
     },
     {
       "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\vizyon-misyon.jpg",

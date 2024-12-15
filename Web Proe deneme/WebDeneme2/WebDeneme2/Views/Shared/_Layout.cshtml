@@ -6,7 +6,8 @@
     <title>@ViewData["Title"] - WebDeneme2</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/WebDeneme2.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hakkimzda.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/WebDeneme2.styles.css" asp-append-version="true" /> *@
 </head>
 <body>
     <header>
@@ -28,7 +29,7 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="Hakkimizda" asp-action="Hakkimizda">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">İletişim</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Iletisim">İletişim</a>
                         </li>
                     </ul>
                     <div class="navbar-buttons col-md-4">
@@ -39,17 +40,32 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    @* <footer class="border-top footer text-muted">
+    <main>
         <div class="container">
-            &copy; 2024 - WebDeneme2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div> *@
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </main>
+    
+
+    <footer class="border-top footer text-muted bg-dark text-white py-3 mt-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <div>
+                &copy; 2024 - WebDeneme2 |
+                <a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Gizlilik Politikası</a> |
+                <a class="text-white" asp-area="" asp-controller="Home" asp-action="Terms">Kullanım Şartları</a>
+            </div>
+            <div>
+                <span>Bize Ulaşın:</span>
+                <a href="mailto:info@webdeneme2.com" class="text-white">info@webdeneme2.com</a> |
+                <a href="tel:+905555555555" class="text-white">+90 555 555 5555</a>
+            </div>
+        </div>
     </footer>
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -58,6 +74,9 @@
             document.querySelector('.navbar-nav').classList.toggle('show');
         });
     </script>
+
+    
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
