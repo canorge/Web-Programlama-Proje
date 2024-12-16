@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/GirisYap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lyaXNZYXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Hakkimizda/Hakkimizda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFra2ltaXpkYVxIYWtraW1pemRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

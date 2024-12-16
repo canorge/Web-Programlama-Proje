@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UvNANKuxYIlrJ0IzrBGWfGjTykfew9Fc8+HBjXeunF8=",
+  "Hash": "B0cW/DmGE9ktxbEGsFyEDAm5C19086ozsWbj1NM14iE=",
   "Source": "WebDeneme2",
   "BasePath": "_content/WebDeneme2",
   "Mode": "Default",
@@ -131,12 +131,12 @@
       "OriginalItemSpec": "wwwroot\\img\\anasayfaresim.jpg"
     },
     {
-      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\hakkimizda.webp",
+      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\hakkimizda.jpg",
       "SourceId": "WebDeneme2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\",
       "BasePath": "_content/WebDeneme2",
-      "RelativePath": "img/hakkimizda.webp",
+      "RelativePath": "img/hakkimizda.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +147,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\hakkimizda.webp"
+      "OriginalItemSpec": "wwwroot\\img\\hakkimizda.jpg"
     },
     {
       "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\kas.jpg",

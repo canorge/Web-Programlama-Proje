@@ -5,14 +5,18 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    
     display: flex; /* Sayfa düzenini flexbox yapar */
     flex-direction: column; /* Ýçerikleri dikey hizalar */
 }
 
-main{
-    flex:1;
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
+
+
 
 /* Navbar */
 .navbar {
@@ -296,12 +300,89 @@ footer {
 
 /*  HÝZMETLER KISMI SONU  */
 
+/***  HAKKIMIZDA **/
+
+/* Hakkýmýzda Bölümü */
+.about-section {
+    padding: 50px 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .about-section h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+        .about-section h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #007bff;
+            margin-top: 10px;
+            border-radius: 2px;
+        }
+
+    .about-section p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .about-section .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+        .about-section .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+    .about-section img {
+        max-width: 100%;
+        height: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
+    .about-section {
+        text-align: center;
+    }
+
+        .about-section img {
+            margin-top: 20px;
+        }
+
+        .about-section .btn-primary {
+            display: inline-block;
+            margin-top: 15px;
+        }
+}
+
+
+
+/******/
+
 
 /* Ýletiþim Bilgileri ve Harita */
 .contact-map-container {
     display: flex;
-    flex:1;
-    gap: 30px;
+    flex: 1;
+    gap: 40px; /* Aralýklarý artýrdým */
     justify-content: space-between;
     flex-wrap: wrap; /* Ekran küçüldüðünde elemanlarýn alt satýra geçmesine izin verir */
 }
@@ -313,8 +394,8 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
-    min-width: 300px; /* Minimum geniþlik */
-    max-width: 600px; /* Maksimum geniþlik */
+    min-width: 400px; /* Minimum geniþliði artýrdým */
+    max-width: 800px; /* Maksimum geniþliði artýrdým */
 }
 
 /* Google Maps iframe */
@@ -324,8 +405,8 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     flex: 1;
-    min-width: 300px; /* Minimum geniþlik */
-    max-width: 600px; /* Maksimum geniþlik */
+    min-width: 400px; /* Minimum geniþliði artýrdým */
+    max-width: 800px; /* Maksimum geniþliði artýrdým */
 }
 
     .map-container iframe {
@@ -337,12 +418,115 @@ footer {
 
 
 
-    /*  FOOTER */
 
-footer {
-    
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: /*15px*/  1rem 0;
-}   
+
+
+
+
+
+/**  LOGIN  **/
+
+
+
+/* Login Container */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px; /* Geniþliði artýrdým */
+    padding: 30px; /* Paddingi artýrdým */
+    box-sizing: border-box;
+}
+
+    /* Login Card */
+    .login-container .login-card {
+        background: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Gölgeyi biraz daha büyüttüm */
+        border-radius: 10px;
+        padding: 40px; /* Paddingi artýrdým */
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    /* Title */
+    .login-container .login-title {
+        font-size: 28px; /* Font büyüklüðünü artýrdým */
+        font-weight: bold;
+        margin-bottom: 30px; /* Alt margini artýrdým */
+        color: #0984e3;
+    }
+
+    /* Input Group */
+    .login-container .input-group {
+        margin-bottom: 20px; /* Alt margini artýrdým */
+        text-align: left;
+    }
+
+    /* Labels */
+    .login-container .input-label {
+        font-size: 16px; /* Font büyüklüðünü artýrdým */
+        margin-bottom: 8px; /* Alt margini artýrdým */
+        display: block;
+        color: #333;
+    }
+
+    /* Inputs */
+    .login-container .form-input {
+        width: 100%;
+        padding: 12px 18px; /* Paddingi artýrdým */
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px; /* Font büyüklüðünü artýrdým */
+        transition: border 0.3s ease;
+        box-sizing: border-box;
+    }
+
+        .login-container .form-input:focus {
+            border: 1px solid #0984e3;
+            outline: none;
+        }
+
+    /* Validation Messages */
+    .login-container .validation-message {
+        font-size: 14px; /* Font büyüklüðünü artýrdým */
+        color: #e74c3c;
+        margin-top: 6px; /* Üst margini artýrdým */
+        display: block;
+    }
+
+    /* Button */
+    .login-container .btn-submit {
+        width: 100%;
+        padding: 14px; /* Paddingi artýrdým */
+        background: #0984e3;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px; /* Font büyüklüðünü artýrdým */
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+        .login-container .btn-submit:hover {
+            background: #74b9ff;
+        }
+
+    /* Links */
+    .login-container .form-links {
+        margin-top: 20px; /* Üst margini artýrdým */
+    }
+
+    .login-container .link {
+        font-size: 16px; /* Font büyüklüðünü artýrdým */
+        color: #0984e3;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .login-container .link:hover {
+            color: #74b9ff;
+        }
+

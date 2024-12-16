@@ -1,0 +1,27 @@
+﻿@model GirisViewModel
+@{
+    // Layout = "~/Views/Shared/_Layout.cshtml"; // İsteğe bağlı, bir layout kullanabilirsiniz
+    ViewData["Title"] = "Giriş Yap";
+}
+
+<div class="login-container">
+    <div class="login-card">
+        <h1 class="login-title">Giriş Yap</h1>
+        <form asp-action="Login" method="post">
+            <div class="input-group">
+                <label asp-for="Email" class="input-label">Email</label>
+                <input asp-for="Email" class="form-input" placeholder="Email adresinizi girin" required />
+                <span asp-validation-for="Email" class="validation-message"></span>
+            </div>
+            <div class="input-group">
+                <label asp-for="Sifre" class="input-label">Şifre</label>
+                <input asp-for="Sifre" type="password" class="form-input" placeholder="Şifrenizi girin" required />
+                <span asp-validation-for="Sifre" class="validation-message"></span>
+            </div>
+            <button type="submit" class="btn-submit">Giriş Yap</button>
+            <div class="form-links">
+                <a asp-action="ForgotPassword" class="link">Şifremi Unuttum?</a>
+            </div>
+        </form>
+    </div>
+</div>

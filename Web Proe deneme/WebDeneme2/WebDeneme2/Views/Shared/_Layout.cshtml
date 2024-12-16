@@ -34,36 +34,23 @@
                     </ul>
                     <div class="navbar-buttons col-md-4">
                         <a class="btn">Randevu Al</a>
-                        <a class="btn">Giriş Yap</a>
+                        <a class="btn" asp-controller="GirisYap" asp-action="Index">Giriş Yap</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
+   
         <div class="container">
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>
         </div>
-    </main>
+    
     
 
-    <footer class="border-top footer text-muted bg-dark text-white py-3 mt-4">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <div>
-                &copy; 2024 - WebDeneme2 |
-                <a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Gizlilik Politikası</a> |
-                <a class="text-white" asp-area="" asp-controller="Home" asp-action="Terms">Kullanım Şartları</a>
-            </div>
-            <div>
-                <span>Bize Ulaşın:</span>
-                <a href="mailto:info@webdeneme2.com" class="text-white">info@webdeneme2.com</a> |
-                <a href="tel:+905555555555" class="text-white">+90 555 555 5555</a>
-            </div>
-        </div>
-    </footer>
+
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
