@@ -1,4 +1,6 @@
-﻿namespace WebDeneme2.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace WebDeneme2.Models
 {
     public class Musteri
     {

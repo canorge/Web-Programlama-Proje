@@ -530,3 +530,212 @@ footer {
             color: #74b9ff;
         }
 
+
+
+
+/*****************************************************/
+
+/**  ÞÝFRE YENÝLEME  **/
+
+.update-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Update Card */
+.update-card {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.update-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Group */
+.update-container .input-group {
+    margin-bottom: 15px;
+}
+
+.update-container .input-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.update-container .form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+    .update-container .form-input:focus {
+        border-color: #007bff;
+        outline: none;
+        background-color: #fff;
+    }
+
+.update-container .validation-message {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Button */
+.update-container .btn-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .update-container .btn-submit:hover {
+        background-color: #0056b3;
+    }
+
+/* Links */
+
+.update-container .form-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    .update-container .form-links a {
+        color: #007bff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+        .update-container .form-links a:hover {
+            text-decoration: underline;
+        }
+
+/************************************/
+
+/**    KAYIT OL   **/
+
+.register-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+    .register-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: 600;
+    }
+
+/* Form Gruplarý */
+    .register-container .form-group {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+        .register-container .form-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            color: #555;
+        }
+
+        .register-container .form-group input,
+        .register-container .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            transition: border-color 0.3s;
+        }
+
+            .register-container .form-group input:focus,
+            .register-container .form-group select:focus {
+                outline: none;
+                border-color: #6a11cb;
+                box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+            }
+
+/* Validation Mesajlarý */
+    .register-container .text-danger {
+        font-size: 0.875rem;
+        margin-top: 5px;
+        display: block;
+        color: #e74c3c;
+    }
+
+/* Buton Stili */
+    .register-container .btn-primary {
+        background-color: #6a11cb;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+        .register-container .btn-primary:hover {
+            background-color: #2575fc;
+        }
+
+/* Animasyon */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Tasarým */
+@media (max-width: 768px) {
+    .register-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        padding: 15px;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+    }
+}

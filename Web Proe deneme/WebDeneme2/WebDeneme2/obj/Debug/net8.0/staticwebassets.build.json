@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B0cW/DmGE9ktxbEGsFyEDAm5C19086ozsWbj1NM14iE=",
+  "Hash": "dMJHuNhRYbQT5S+FjTp62VuFWQKVvEVwmbGTxpwleBU=",
   "Source": "WebDeneme2",
   "BasePath": "_content/WebDeneme2",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebDeneme2.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\hakkimzda.css",
+      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\MusteriPanel.css",
       "SourceId": "WebDeneme2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\",
       "BasePath": "_content/WebDeneme2",
-      "RelativePath": "css/hakkimzda.css",
+      "RelativePath": "css/MusteriPanel.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\hakkimzda.css"
+      "OriginalItemSpec": "wwwroot\\css\\MusteriPanel.css"
     },
     {
       "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\site.css",

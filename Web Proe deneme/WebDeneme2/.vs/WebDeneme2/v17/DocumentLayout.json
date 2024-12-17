@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\musteripanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\musteripanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\hakkimizda\\hakkimizda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\hakkimizda\\hakkimizda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\home\\iletisim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\home\\iletisim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\girisyap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\girisyap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\shared\\_layout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\shared\\_layout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\controllers\\girisyapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +19,56 @@
       "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\models\\girisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\controllers\\musteripanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\controllers\\musteripanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\wwwroot\\css\\musteripanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\wwwroot\\css\\musteripanel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\girisyap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\girisyap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\girisyap\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\girisyap\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\girisyap\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\girisyap\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\models\\musteri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\models\\musteri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\models\\musteriregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\models\\musteriregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\models\\sifreyenileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\models\\sifreyenileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\hakkimizda\\hakkimizda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\hakkimizda\\hakkimizda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\home\\iletisim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\home\\iletisim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +78,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\MusteriPanel\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebDeneme2\\Views\\MusteriPanel\\Index.cshtml",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\MusteriPanel\\Index.cshtml",
+              "RelativeToolTip": "WebDeneme2\\Views\\MusteriPanel\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T12:58:31.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MusteriPanelController.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Controllers\\MusteriPanelController.cs",
+              "RelativeDocumentMoniker": "WebDeneme2\\Controllers\\MusteriPanelController.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Controllers\\MusteriPanelController.cs",
+              "RelativeToolTip": "WebDeneme2\\Controllers\\MusteriPanelController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T12:51:50.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MusteriPanel.css",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\MusteriPanel.css",
+              "RelativeDocumentMoniker": "WebDeneme2\\wwwroot\\css\\MusteriPanel.css",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\MusteriPanel.css",
+              "RelativeToolTip": "WebDeneme2\\wwwroot\\css\\MusteriPanel.css",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-17T12:41:31.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "_Layout2.cshtml",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Shared\\_Layout2.cshtml",
+              "RelativeDocumentMoniker": "WebDeneme2\\Views\\Shared\\_Layout2.cshtml",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Shared\\_Layout2.cshtml",
+              "RelativeToolTip": "WebDeneme2\\Views\\Shared\\_Layout2.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T12:39:50.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\GirisYap\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebDeneme2\\Views\\GirisYap\\Create.cshtml",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\GirisYap\\Create.cshtml",
+              "RelativeToolTip": "WebDeneme2\\Views\\GirisYap\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T03:37:30.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MusteriRegister.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\MusteriRegister.cs",
+              "RelativeDocumentMoniker": "WebDeneme2\\Models\\MusteriRegister.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\MusteriRegister.cs",
+              "RelativeToolTip": "WebDeneme2\\Models\\MusteriRegister.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T03:35:12.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SifreYenileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\SifreYenileViewModel.cs",
+              "RelativeDocumentMoniker": "WebDeneme2\\Models\\SifreYenileViewModel.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\SifreYenileViewModel.cs",
+              "RelativeToolTip": "WebDeneme2\\Models\\SifreYenileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T03:16:06.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\GirisYap\\Update.cshtml",
+              "RelativeDocumentMoniker": "WebDeneme2\\Views\\GirisYap\\Update.cshtml",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\GirisYap\\Update.cshtml",
+              "RelativeToolTip": "WebDeneme2\\Views\\GirisYap\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T03:12:45.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Hakkimizda.cshtml",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Hakkimizda\\Hakkimizda.cshtml",
               "RelativeDocumentMoniker": "WebDeneme2\\Views\\Hakkimizda\\Hakkimizda.cshtml",
@@ -58,12 +194,11 @@
               "RelativeToolTip": "WebDeneme2\\Views\\Hakkimizda\\Hakkimizda.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-16T13:02:50.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T13:02:50.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "Iletisim.cshtml",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Home\\Iletisim.cshtml",
               "RelativeDocumentMoniker": "WebDeneme2\\Views\\Home\\Iletisim.cshtml",
@@ -71,12 +206,11 @@
               "RelativeToolTip": "WebDeneme2\\Views\\Home\\Iletisim.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-16T12:57:51.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T12:57:51.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebDeneme2\\Views\\Shared\\_Layout.cshtml",
@@ -89,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "GirisViewModel.cs",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\GirisViewModel.cs",
               "RelativeDocumentMoniker": "WebDeneme2\\Models\\GirisViewModel.cs",
@@ -102,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "WebDeneme2\\Models\\Admin.cs",
@@ -110,57 +244,56 @@
               "RelativeToolTip": "WebDeneme2\\Models\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T12:22:33.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T12:22:33.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Musteri.cs",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\Musteri.cs",
               "RelativeDocumentMoniker": "WebDeneme2\\Models\\Musteri.cs",
               "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\Musteri.cs",
               "RelativeToolTip": "WebDeneme2\\Models\\Musteri.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T12:22:22.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\GirisYap\\Index.cshtml",
               "RelativeDocumentMoniker": "WebDeneme2\\Views\\GirisYap\\Index.cshtml",
               "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\GirisYap\\Index.cshtml",
               "RelativeToolTip": "WebDeneme2\\Views\\GirisYap\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-16T12:15:37.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "GirisYapController.cs",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Controllers\\GirisYapController.cs",
               "RelativeDocumentMoniker": "WebDeneme2\\Controllers\\GirisYapController.cs",
               "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Controllers\\GirisYapController.cs",
               "RelativeToolTip": "WebDeneme2\\Controllers\\GirisYapController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwB0AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T12:14:11.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "WebDeneme2\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\site.css",
               "RelativeToolTip": "WebDeneme2\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAACoBAAAAAAAAAAAAAGIBAAATAAAAAAAAAA==",
+              "ViewState": "AgIAALkCAAAAAAAAAAAYwMQCAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-12-13T00:48:49.151Z",
               "EditorCaption": ""

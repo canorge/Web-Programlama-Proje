@@ -1,0 +1,28 @@
+﻿@model SifreYenileViewModel
+@{
+    ViewData["Title"] = "Şifreyi Güncelle";
+}
+
+<div class="update-container">
+    <div class="update-card">
+        <h1 class="update-title">Şifrenizi Güncelleyin</h1>
+        <form asp-action="Update" method="post">
+            <div class="input-group">
+                <label asp-for="Email" class="input-label">Email</label>
+                <input asp-for="Email" class="form-input" placeholder="Email adresinizi girin" required />
+                <span asp-validation-for="Email" class="validation-message"></span>
+            </div>
+            <div class="input-group">
+                <label asp-for="Sifre" class="input-label">Yeni Şifre</label>
+                <input asp-for="Sifre" type="password" class="form-input" placeholder="Yeni şifrenizi girin" required />
+                <span asp-validation-for="Sifre" class="validation-message"></span>
+            </div>
+            <div class="input-group">
+                <label asp-for="ConfirmSifre" class="input-label">Şifreyi Onaylayın</label>
+                <input asp-for="ConfirmSifre" type="password" class="form-input" placeholder="Şifrenizi onaylayın" required />
+                <span asp-validation-for="ConfirmSifre" class="validation-message"></span>
+            </div>
+            <button type="submit" class="btn-submit">Şifreyi Güncelle</button>
+        </form>
+    </div>
+</div>

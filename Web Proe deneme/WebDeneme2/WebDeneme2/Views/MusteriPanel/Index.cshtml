@@ -1,0 +1,16 @@
+﻿@model Musteri
+@{
+    Layout = "/Views/Shared/_Layout2.cshtml";
+    ViewData["Title"] = "Profilim";
+    ViewData["Kullanici"] = Model.Ad + " " + Model.Soyad;
+}
+
+<h2>Profil Bilgilerim</h2>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Ad:</strong> @Model.Ad</p>
+        <p><strong>Soyad:</strong> @Model.Soyad</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Telefon:</strong> @Model.TelNo</p>
+    </div>
+</div>

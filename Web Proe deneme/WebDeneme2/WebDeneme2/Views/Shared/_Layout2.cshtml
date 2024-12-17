@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebDeneme2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/MusteriPanel.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Müşteri Paneli</a>
+                <div class="d-flex">
+                    <span class="text-white me-3">Hoşgeldiniz,@ViewData["Kullanici"]</span>
+                    <a class="btn btn-outline-light btn-sm" href="#">Çıkış</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sidebar">
+        <h4>Menü</h4>
+        <a href="/Home/Profilim">Profilim</a>
+        <a href="/Home/Siparislerim">Siparişlerim</a>
+        <a href="/Home/Bildirimler">Bildirimler</a>
+        <a href="/Home/Ayarlar">Ayarlar</a>
+        <a href="/Home/Destek">Destek</a>
+    </div>
+
+
+    <div class="content">
+        @RenderBody()
+    </div>
+    
+    
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+

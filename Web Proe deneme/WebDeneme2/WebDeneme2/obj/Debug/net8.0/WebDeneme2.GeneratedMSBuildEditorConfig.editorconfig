@@ -26,8 +26,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/GirisYap/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lyaXNZYXBcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/GirisYap/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lyaXNZYXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/GirisYap/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lyaXNZYXBcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Hakkimizda/Hakkimizda.cshtml]
@@ -44,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/MusteriPanel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVBhbmVsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Shared/Error.cshtml]
@@ -65,3 +77,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l1qk75iw4z
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-9j74z7vdle

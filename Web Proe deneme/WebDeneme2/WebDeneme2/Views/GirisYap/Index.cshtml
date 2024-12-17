@@ -7,7 +7,7 @@
 <div class="login-container">
     <div class="login-card">
         <h1 class="login-title">Giriş Yap</h1>
-        <form asp-action="Login" method="post">
+        <form asp-action="Index" method="post">
             <div class="input-group">
                 <label asp-for="Email" class="input-label">Email</label>
                 <input asp-for="Email" class="form-input" placeholder="Email adresinizi girin" required />
@@ -20,7 +20,8 @@
             </div>
             <button type="submit" class="btn-submit">Giriş Yap</button>
             <div class="form-links">
-                <a asp-action="ForgotPassword" class="link">Şifremi Unuttum?</a>
+                <a asp-action="Update" class="link">Şifremi Unuttum?</a>
+                <a asp-action="Create" class="link">Kayıt Ol</a>
             </div>
         </form>
     </div>
