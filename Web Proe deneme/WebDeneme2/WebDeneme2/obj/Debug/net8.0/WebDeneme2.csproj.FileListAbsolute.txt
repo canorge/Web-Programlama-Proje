@@ -167,3 +167,4 @@ C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2\bin\Deb
 C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2\obj\Debug\net8.0\WebDeneme2.csproj.AssemblyReference.cache
 C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2\obj\Debug\net8.0\WebDeneme2.csproj.Up2Date
 C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout2.cshtml.rz.scp.css
+C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout3.cshtml.rz.scp.css

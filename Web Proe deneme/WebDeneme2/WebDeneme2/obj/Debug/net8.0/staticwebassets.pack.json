@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebDeneme2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\CalisanPanel.css",
+      "PackagePath": "staticwebassets\\css\\CalisanPanel.css"
+    },
+    {
       "Id": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\MusteriPanel.css",
       "PackagePath": "staticwebassets\\css\\MusteriPanel.css"
     },

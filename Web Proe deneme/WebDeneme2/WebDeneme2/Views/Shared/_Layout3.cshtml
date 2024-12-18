@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebDeneme2</title>
+    <title>@TempData["Title"] - WebDeneme2</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/MusteriPanel.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/CalisanPanel.css" asp-append-version="true" />
 </head>
 <body>
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Müşteri Paneli</a>
+                <a class="navbar-brand" href="#">Çalışan Paneli</a>
                 <div class="d-flex">
-                    <span class="text-white me-3">Hoşgeldiniz,@Model?.Ad @Model?.Soyad</span>
+                    <span class="text-white me-3">Hoşgeldiniz,@Model.Calisan.Ad @Model.Calisan.Soyad</span>
                     <a class="btn btn-outline-light btn-sm" asp-controller="home" asp-action="Index">Çıkış</a>
                 </div>
             </div>
@@ -23,8 +23,8 @@
 
     <div class="sidebar">
         <h4>Menü</h4>
-        <a asp-controller="MusteriPanel" asp-action="Index" >Profilim</a>
-        <a asp-controller="MusteriPanel" asp-action="Randevular" asp-route-id="@Model?.Id">Randevularım</a>
+        <a asp-controller="CalisanPanel" asp-action="Index" >Profilim</a>
+        <a asp-controller="CalisanPanel" asp-action="Randevular" asp-route-id="@Model.Calisan.Id">İşler</a>
     </div>
 
 

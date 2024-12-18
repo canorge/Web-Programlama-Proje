@@ -1,0 +1,219 @@
+/* Genel Kart ve Arka Plan */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    width: 220px;
+    padding: 20px;
+}
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        font-size:15px;
+    }
+    .sidebar h4{
+        color:white;
+    }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+.content {
+    margin-left: 240px;
+    padding: 20px;
+    color: black;
+}
+
+
+
+
+.CalisanPanelIndex .card {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.CalisanPanelIndex .card-body {
+    display: flex;
+}
+/* Baþlýklar */
+.CalisanPanelIndex h2, h4 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Listeler */
+.CalisanPanelIndex ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.CalisanPanelIndex ul li {
+background: #e9ecef;
+margin: 5px 0;
+padding: 10px 15px;
+border-radius: 5px;
+font-family: 'Arial', sans-serif;
+font-size: 14px;
+color: #495057;
+transition: all 0.3s ease;
+}
+
+    .CalisanPanelIndex ul li:hover {
+        background: #ced4da;
+        color: #212529;
+    }
+
+/* Form Elemanlarý */
+.CalisanPanelIndex input[type="text"], input[type="email"], input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.CalisanPanelIndex input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Butonlar */
+.CalisanPanelIndex button {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+    .CalisanPanelIndex button.btn-primary {
+        background: #007bff;
+        color: #fff;
+    }
+
+        .CalisanPanelIndex button.btn-primary:hover {
+            background: #0056b3;
+            color: #fff;
+        }
+
+    .CalisanPanelIndex button.btn-success {
+        background: #28a745;
+        color: #fff;
+    }
+
+        .CalisanPanelIndex button.btn-success:hover {
+            background: #218838;
+            color: #fff;
+        }
+
+    .CalisanPanelIndex button.btn-secondary {
+        background: #6c757d;
+        color: #fff;
+    }
+
+        .CalisanPanelIndex button.btn-secondary:hover {
+            background: #5a6268;
+            color: #fff;
+        }
+
+/* Form Alanlarýnýn Gizli/Görünür Geçiþi */
+.CalisanPanelIndex #formAlani, #YetenekAlani {
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    display: none;
+}
+
+    .CalisanPanelIndex #formAlani[style*="display: block"],
+    #YetenekAlani[style*="display: block"] {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+/* Mobil Cihazlar için Duyarlýlýk */
+@media (max-width: 768px) {
+    /* Sidebar'ý üstte göster */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+        .sidebar a {
+            font-size: 14px;
+            padding: 8px;
+            text-align: center;
+        }
+
+    /* Content alanýný üstten baþlat */
+    .content {
+        margin-left: 0;
+        padding-top: 10px;
+    }
+
+    /* Kart ve Form düzenleri */
+    .CalisanPanelIndex .card-body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .CalisanPanelIndex .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Form elemanlarýný tam geniþlik yap */
+    .CalisanPanelIndex input[type="text"],
+    .CalisanPanelIndex input[type="email"],
+    .CalisanPanelIndex input[type="checkbox"],
+    .CalisanPanelIndex button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Butonlar */
+    .CalisanPanelIndex button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* Liste elemanlarý */
+    .CalisanPanelIndex ul li {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    /* Navbar düzeni */
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar .text-white {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar .btn {
+        width: 100%;
+    }
+}

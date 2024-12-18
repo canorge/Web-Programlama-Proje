@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebDeneme2.Models;
 
@@ -11,9 +12,11 @@ using WebDeneme2.Models;
 namespace WebDeneme2.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20241218004143_mssql_migration_406")]
+    partial class mssql_migration_406
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -177,9 +180,6 @@ namespace WebDeneme2.Migrations
                     b.Property<int>("CalisanId")
                         .HasColumnType("int");
 
-                    b.Property<int>("HizmetId")
-                        .HasColumnType("int");
-
                     b.Property<int>("MusteriId")
                         .HasColumnType("int");
 
@@ -192,8 +192,6 @@ namespace WebDeneme2.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CalisanId");
-
-                    b.HasIndex("HizmetId");
 
                     b.HasIndex("MusteriId");
 
@@ -227,12 +225,6 @@ namespace WebDeneme2.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebDeneme2.Models.Hizmet", "Hizmet")
-                        .WithMany()
-                        .HasForeignKey("HizmetId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("WebDeneme2.Models.Musteri", "Musteri")
                         .WithMany("Randevular")
                         .HasForeignKey("MusteriId")
@@ -240,8 +232,6 @@ namespace WebDeneme2.Migrations
                         .IsRequired();
 
                     b.Navigation("Calisan");
-
-                    b.Navigation("Hizmet");
 
                     b.Navigation("Musteri");
                 });

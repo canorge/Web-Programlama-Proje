@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dMJHuNhRYbQT5S+FjTp62VuFWQKVvEVwmbGTxpwleBU=",
+  "Hash": "+X080OH1oolxC9vqMAqL6xzGICh33lHzjujl3OVZSbY=",
   "Source": "WebDeneme2",
   "BasePath": "_content/WebDeneme2",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebDeneme2.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\CalisanPanel.css",
+      "SourceId": "WebDeneme2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\",
+      "BasePath": "_content/WebDeneme2",
+      "RelativePath": "css/CalisanPanel.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CalisanPanel.css"
     },
     {
       "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\css\\MusteriPanel.css",

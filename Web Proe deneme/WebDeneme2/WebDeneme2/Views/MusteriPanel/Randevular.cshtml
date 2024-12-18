@@ -1,0 +1,37 @@
+﻿@model WebDeneme2.Models.Musteri
+
+@{
+    Layout = "/Views/Shared/_Layout2.cshtml";
+    ViewData["Title"] = "Müşteri Randevuları";
+}
+
+<h2>@Model.Ad @Model.Soyad - Randevuları</h2>
+
+@if (Model.Randevular != null && Model.Randevular.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Randevu Tarihi</th>
+                <th>Çalışan</th>
+                <th>Hizmet</th>
+                <th>Süre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var randevu in Model.Randevular)
+            {
+                <tr>
+                    <td>@randevu.RandevuTarihi.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@randevu.Calisan?.Ad @randevu.Calisan?.Soyad</td>
+                    <td>@randevu.Hizmet?.Ad</td>
+                    <td>@randevu.Hizmet?.Sure</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Henüz randevu oluşturmadınız.</p>
+}

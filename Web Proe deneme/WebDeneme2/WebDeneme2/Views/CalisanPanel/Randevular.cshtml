@@ -1,0 +1,43 @@
+﻿@model WebDeneme2.Models.Calisan
+
+@{
+    Layout = "/Views/Shared/_Layout3.cshtml";
+    ViewData["Title"] = "Çalışan İşleri";
+}
+
+<h2>@Model.Ad @Model.Soyad - İşleri</h2>
+
+@if (Model.Randevular != null && Model.Randevular.Any())
+{
+    @if(Model.Randevular.Any(r=>r.RandevuTarihi >= DateTime.Now) && Model.Randevular.Any(r=>r.RandevuDurum=="Kabul"))
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Randevu Tarihi</th>
+                    <th>Müşteri</th>
+                    <th>Yapılacak İş</th>
+                    <th>Süre</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var randevu in Model.Randevular)
+                {
+                    <tr>
+                        <td>@randevu.RandevuTarihi.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@randevu.Musteri?.Ad @randevu.Musteri?.Soyad</td>
+                        <td>@randevu.Hizmet?.Ad
+                        <td>
+                        <td>@randevu.Hizmet?.Sure
+                        <td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+   
+}
+else
+{
+    <p>Henüz herhangi bir işiniz bulunmamaktadır.</p>
+}
