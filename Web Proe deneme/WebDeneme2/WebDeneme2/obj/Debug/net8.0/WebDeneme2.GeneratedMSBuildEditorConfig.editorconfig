@@ -26,6 +26,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\canor\OneDrive\Masaüstü\Web Proe deneme\WebDeneme2\WebDeneme2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/AdminPanel/BekleyenRandevular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxCZWtsZXllblJhbmRldnVsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/AdminPanel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/AdminPanel/Musteriler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxNdXN0ZXJpbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/AdminPanel/Randevular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxSYW5kZXZ1bGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/AdminPanel/RedRandevu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxSZWRSYW5kZXZ1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/AdminPanel/TumRandevular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxUdW1SYW5kZXZ1bGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/CalisanPanel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblBhbmVsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +94,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVBhbmVsXFJhbmRldnVsYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Randevu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -97,3 +125,7 @@ build_metadata.AdditionalFiles.CssScope = b-9j74z7vdle
 [C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Shared/_Layout3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-k1dbugs82g
+
+[C:/Users/canor/OneDrive/Masaüstü/Web Proe deneme/WebDeneme2/WebDeneme2/Views/Shared/_Layout4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-qlp0pih11k

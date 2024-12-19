@@ -1,15 +1,15 @@
-﻿@model WebDeneme2.Models.Calisan
+﻿@model WebDeneme2.Models.CalisanViewModel
 
 @{
     Layout = "/Views/Shared/_Layout3.cshtml";
     ViewData["Title"] = "Çalışan İşleri";
 }
 
-<h2>@Model.Ad @Model.Soyad - İşleri</h2>
+<h2>@Model.Calisan.Ad @Model.Calisan.Soyad - İşleri</h2>
 
-@if (Model.Randevular != null && Model.Randevular.Any())
-{
-    @if(Model.Randevular.Any(r=>r.RandevuTarihi >= DateTime.Now) && Model.Randevular.Any(r=>r.RandevuDurum=="Kabul"))
+
+
+    @if(Model.Calisan.Randevular.Any(r=>r.RandevuTarihi >= DateTime.Now) && Model.Calisan.Randevular.Any(r=>r.RandevuDurum=="Kabul"))
     {
         <table class="table">
             <thead>
@@ -21,7 +21,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var randevu in Model.Randevular)
+                @foreach (var randevu in Model.Calisan.Randevular)
                 {
                     <tr>
                         <td>@randevu.RandevuTarihi.ToString("dd/MM/yyyy HH:mm")</td>
@@ -35,9 +35,7 @@
             </tbody>
         </table>
     }
-   
-}
-else
-{
-    <p>Henüz herhangi bir işiniz bulunmamaktadır.</p>
-}
+    else
+    {
+        <p style="color:black;">Henüz herhangi bir işiniz bulunmamaktadır.</p>
+    }

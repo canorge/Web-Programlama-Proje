@@ -12,9 +12,9 @@
         <!-- Navbar -->
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Çalışan Paneli</a>
+                <a class="navbar-brand" href="#">Admin Paneli</a>
                 <div class="d-flex">
-                    <span class="text-white me-3">Hoşgeldiniz,@Model.Calisan.Ad @Model.Calisan.Soyad</span>
+                    <span class="text-white me-3">Hoşgeldiniz,@Model.Admin.Ad @Model.Admin.Soyad</span>
                     <a class="btn btn-outline-light btn-sm" asp-controller="home" asp-action="Index">Çıkış</a>
                 </div>
             </div>
@@ -23,8 +23,12 @@
 
     <div class="sidebar">
         <h4>Menü</h4>
-        <a asp-controller="CalisanPanel" asp-action="Index" asp-route-id="@Model.Calisan.Id">Profilim</a>
-        <a asp-controller="CalisanPanel" asp-action="Randevular" asp-route-id="@Model.Calisan.Id">İşler</a>
+        <a asp-controller="AdminPanel" asp-action="Index" asp-route-id="@Model.Admin.Id">Çalışanlar</a>
+        <a asp-controller="AdminPanel" asp-action="Musteriler" asp-route-id="@Model.Admin.Id">Müşteriler</a>
+        <a asp-controller="AdminPanel" asp-action="Randevular" asp-route-id="@Model.Admin.Id">İşler</a>
+        <a asp-controller="AdminPanel" asp-action="BekleyenRandevular" asp-route-id="@Model.Admin.Id">Bekleyen Randevular</a>
+        <a asp-controller="AdminPanel" asp-action="RedRandevu" asp-route-id="@Model.Admin.Id">Reddedilen Randevular</a>
+        <a asp-controller="AdminPanel" asp-action="TumRandevular" asp-route-id="@Model.Admin.Id">Tüm Randevular</a>
     </div>
 
 

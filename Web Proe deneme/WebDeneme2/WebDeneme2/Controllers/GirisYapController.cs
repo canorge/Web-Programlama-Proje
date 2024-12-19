@@ -34,10 +34,10 @@ namespace WebDeneme2.Controllers
             {
                 return RedirectToAction("Index", "CalisanPanel", new { id = Calisan.Id });
             }
-            var Admin = await _dataContext.Calisanlar.FirstOrDefaultAsync(a => a.Email == model.Email && a.Sifre == model.Sifre);
-            if (Calisan != null)
+            var Admin = await _dataContext.Adminler.FirstOrDefaultAsync(a => a.Email == model.Email && a.Sifre == model.Sifre);
+            if (Admin != null)
             {
-                //admin paneline
+                return RedirectToAction("Index", "AdminPanel", new { id = Admin.Id });
             }
             return NotFound();
         }

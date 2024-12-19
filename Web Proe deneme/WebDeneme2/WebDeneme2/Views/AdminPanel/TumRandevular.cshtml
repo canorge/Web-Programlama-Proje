@@ -1,0 +1,37 @@
+﻿@model AdminViewModel
+@{
+    Layout = "/Views/Shared/_Layout4.cshtml";
+}
+
+<h2>Tüm Randevular</h2>
+
+@if (Model.Randevular != null && Model.Randevular.Any())
+{
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hizmet</th>
+                <th>Müşteri</th>
+                <th>Çalışan</th>
+                <th>Tarih</th>
+                <th>Durum</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var randevu in Model.Randevular)
+            {
+                <tr>
+                    <td>@randevu.Hizmet?.Ad</td>
+                    <td>@randevu.Musteri?.Ad @randevu.Musteri?.Soyad</td>
+                    <td>@randevu.Calisan.Ad @randevu.Calisan.Soyad</td>
+                    <td>@randevu.RandevuTarihi.ToString("dd.MM.yyyy HH:mm")</td>
+                    <td>@randevu.RandevuDurum</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Hiç randevu bulunmamaktadır.</p>
+}

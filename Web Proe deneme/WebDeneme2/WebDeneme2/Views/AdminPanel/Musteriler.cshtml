@@ -1,0 +1,82 @@
+﻿@model AdminViewModel
+
+@{
+    Layout = "/Views/Shared/_Layout4.cshtml";
+}
+
+
+
+<div class="CalisanPanelIndex">
+
+    <h2>Müşteriler</h2>
+    @foreach(var musteri in Model.Musteriler)
+    {
+        <div class="card">
+            <div class="row" id="bilgiAlani">
+                <div class="card-body">
+                    <div class="col-md-6 col-sm12">
+                        <p><strong>Ad:</strong> @musteri.Ad</p>
+                        <p><strong>Soyad:</strong> @musteri.Soyad</p>
+                        <p><strong>Email:</strong> @musteri.Email</p>
+                        <p><strong>Telefon:</strong> @musteri.TelNo</p>
+                        <button id="btnGuncelle" class="btn btn-primary">Güncelle</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--  Form Başlangıçta gizli  -->
+            <div class="card-body" id="formAlani" style="display: none;">
+                <form method="post" asp-action="Musteriler" asp-controller="AdminPanel">
+                     <input type="hidden" name="Musteri.Id" value="@musteri.Id" /> 
+                    <div class="mb-3">
+                        <label for="Ad" class="form-label"><strong>Ad</strong></label>
+                        <input type="text" class="form-control" id="Ad" name="Ad" value="@musteri.Ad" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Soyad" class="form-label"><strong>Soyad</strong></label>
+                        <input type="text" class="form-control" id="Soyad" name="Soyad" value="@musteri.Soyad" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label"><strong>Email</strong></label>
+                        <input type="email" class="form-control" id="Email" name="Email" value="@musteri.Email" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="TelNo" class="form-label"><strong>Telefon</strong></label>
+                        <input type="text" class="form-control" id="TelNo" name="TelNo" value="@musteri.TelNo" />
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Kaydet</button>
+                    <button type="button" id="btnIptal" class="btn btn-secondary">İptal</button>
+                </form>
+            </div>
+
+
+
+
+            @*   <div class="card-body" id="YetenekAlani" style="display: none;">
+        <form method="post" asp-action="Index" asp-controller="CalisanPanel">
+
+        <button type="submit" class="btn btn-success mt-3">Kaydet</button>
+        </form>
+        </div> *@
+        </div>
+    }
+    
+
+</div>
+
+<script>
+    document.getElementById("btnGuncelle").addEventListener("click", function () {
+        // Bilgi alanını gizle, form alanını göster
+        document.getElementById("bilgiAlani").style.display = "none";
+        document.getElementById("formAlani").style.display = "block";
+    });
+
+    document.getElementById("btnIptal").addEventListener("click", function () {
+        // Form alanını gizle, bilgi alanını göster
+        document.getElementById("formAlani").style.display = "none";
+        document.getElementById("bilgiAlani").style.display = "block";
+    });
+</script>

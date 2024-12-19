@@ -1,0 +1,99 @@
+﻿@model AdminViewModel
+
+@{
+    Layout = "/Views/Shared/_Layout4.cshtml";
+}
+
+
+
+<div class="CalisanPanelIndex">
+
+    <h2>Çalışanlar</h2>
+    @foreach(var calisan in Model.Calisanlar)
+    {
+        <div class="card">
+            <div class="row" id="bilgiAlani">
+                <div class="card-body">
+                    <div class="col-md-6 col-sm12">
+                        <p><strong>Ad:</strong> @calisan.Ad</p>
+                        <p><strong>Soyad:</strong> @calisan.Soyad</p>
+                        <p><strong>Email:</strong> @calisan.Email</p>
+                        <p><strong>Telefon:</strong> @calisan.TelNo</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h4>Uzmanlık Alanları</h4>
+                        <ul>
+                            @foreach (var uzmanlik in calisan.UzmanlikAlanlari)
+                            {
+                                <li>@uzmanlik.Hizmet?.Ad</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <button id="btnGuncelle" class="btn btn-primary">Güncelle</button>
+                </div>
+
+            </div>
+
+
+
+            <!--  Form Başlangıçta gizli  -->
+            <div class="card-body" id="formAlani" style="display: none;">
+                <form method="post" asp-action="Index" asp-controller="AdminPanel">
+                    <input type="hidden" name="Calisan.id" value="calisan.Id" />
+                    <div class="mb-3">
+                        <label for="Ad" class="form-label"><strong>Ad</strong></label>
+                        <input type="text" class="form-control" id="Ad" name="Ad" value="@calisan.Ad" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Soyad" class="form-label"><strong>Soyad</strong></label>
+                        <input type="text" class="form-control" id="Soyad" name="Soyad" value="@calisan.Soyad" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label"><strong>Email</strong></label>
+                        <input type="email" class="form-control" id="Email" name="Email" value="@calisan.Email" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="TelNo" class="form-label"><strong>Telefon</strong></label>
+                        <input type="text" class="form-control" id="TelNo" name="TelNo" value="@calisan.TelNo" />
+                    </div>
+
+                    <div class="form-check">
+                        @foreach (var hizmet in Model.TumHizmetler)
+                        {
+                            // Çalışanın uzmanlık alanlarında bu hizmet var mı kontrolü
+                            bool isChecked = calisan.UzmanlikAlanlari
+                            .Any(u => u.HizmetId == hizmet.Id);
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input"
+                                       id="@hizmet.Id"
+                                       name="HizmetIds"
+                                       value="@hizmet.Id"
+                                @(isChecked ? "checked" : "") />
+                                <label class="form-check-label" for="@hizmet.Id">@hizmet.Ad</label>
+                            </div>
+                        }
+                    </div>
+                    <button type="submit" class="btn btn-success">Kaydet</button>
+                    <button type="button" id="btnIptal" class="btn btn-secondary">İptal</button>
+                </form>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    document.getElementById("btnGuncelle").addEventListener("click", function () {
+        // Bilgi alanını gizle, form alanını göster
+        document.getElementById("bilgiAlani").style.display = "none";
+        document.getElementById("formAlani").style.display = "block";
+    });
+
+    document.getElementById("btnIptal").addEventListener("click", function () {
+        // Form alanını gizle, bilgi alanını göster
+        document.getElementById("formAlani").style.display = "none";
+        document.getElementById("bilgiAlani").style.display = "block";
+    });
+</script>

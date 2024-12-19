@@ -26,8 +26,10 @@ namespace WebDeneme2.Controllers
             if (ModelState.IsValid)
             {
                 var musteri = await _dataContext.Musteriler.FirstOrDefaultAsync(m=>m.Id==model.Id);
-                if (musteri != null)
+                if (musteri == null )
                 {
+                    return NotFound();
+                }
                     musteri.Ad = model.Ad;
                     musteri.Soyad = model.Soyad;
                     musteri.Email = model.Email;
@@ -35,10 +37,7 @@ namespace WebDeneme2.Controllers
 
                     _dataContext.Musteriler.Update(musteri);
                     _dataContext.SaveChanges();
-
-                    
                     return RedirectToAction("Index", new { id = musteri.Id });
-                }
             }
             return RedirectToAction("Index", new { id = model.Id });
         }

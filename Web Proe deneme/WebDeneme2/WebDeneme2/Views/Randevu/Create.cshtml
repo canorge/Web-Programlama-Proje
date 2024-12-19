@@ -1,0 +1,63 @@
+﻿@model WebDeneme2.Models.Randevu
+
+@{
+    ViewData["Title"] = "Randevu Oluştur";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="HizmetId">Hizmet Seç</label>
+        <select id="HizmetId" name="HizmetId" class="form-control">
+            <option value="">Bir Hizmet Seçin</option>
+            @foreach (var hizmet in ViewBag.Hizmetler as List<WebDeneme2.Models.Hizmet>)
+            {
+                <option value="@hizmet.Id">@hizmet.Ad</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="CalisanId">Çalışan Seç</label>
+        <select id="CalisanId" name="CalisanId" class="form-control">
+            <option value="">Önce Hizmet Seçin</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="RandevuTarihi">Randevu Tarihi ve Saati</label>
+        <input type="datetime-local" id="RandevuTarihi" name="RandevuTarihi" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Randevu Oluştur</button>
+</form>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Hizmet seçildiğinde çalışanları getir
+            $('#HizmetId').change(function () {
+                var hizmetId = $(this).val();
+
+                if (hizmetId) {
+                    // Hizmet seçildiğinde çalışanları al
+                    $.get('/Randevu/GetCalisanlarByHizmetId', { hizmetId: hizmetId }, function (calisanlar) {
+                        $('#CalisanId').empty(); // Önceki çalışanları temizle
+                        $('#CalisanId').append('<option value="">Bir Çalışan Seçin</option>');
+
+                        $.each(calisanlar, function (index, calisan) {
+                            $('#CalisanId').append('<option value="' + calisan.Id + '">' + calisan.AdSoyad + '</option>');
+                        });
+                    });
+                } else {
+                    // Hizmet seçilmezse, çalışanları temizle
+                    $('#CalisanId').empty();
+                    $('#CalisanId').append('<option value="">Önce Hizmet Seçin</option>');
+                }
+            });
+        });
+    </script>
+}

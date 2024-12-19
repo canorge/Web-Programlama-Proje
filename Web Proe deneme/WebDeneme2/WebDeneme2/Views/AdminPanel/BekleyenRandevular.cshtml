@@ -1,0 +1,47 @@
+﻿@model AdminViewModel
+@{
+    Layout = "/Views/Shared/_Layout4.cshtml";
+}
+
+<h2>Bekleyen Randevular</h2>
+
+@if (Model.Randevular != null && Model.Randevular.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Müşteri</th>
+                <th>Hizmet</th>
+                <th>Çalışan</th>
+                <th>Tarih</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var randevu in Model.Randevular)
+            {
+                <tr>
+                    <td>@randevu.Musteri.Ad @randevu.Musteri.Soyad</td>
+                    <td>@randevu.Hizmet.Ad</td>
+                    <td>@randevu.Calisan.Ad @randevu.Calisan.Soyad</td>
+                    <td>@randevu.RandevuTarihi.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>
+                        <!-- Accept Button -->
+                        <form method="post" asp-action="KabulEt" asp-route-randevuId="@randevu.Id" style="display:inline;">
+                            <button type="submit" class="btn btn-success">Kabul Et</button>
+                        </form>
+                        <!-- Reject Button -->
+                        <form method="post" asp-action="Reddet" asp-route-randevuId="@randevu.Id" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Reddet</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+else
+{
+    <p>Bekleyen Randevu Bulunmamaktadır</p>
+}
