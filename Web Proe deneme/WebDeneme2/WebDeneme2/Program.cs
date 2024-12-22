@@ -19,9 +19,18 @@ builder.Services.AddDbContext<DataContext>(
 
 );
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/GirisYap/Index"; // Giriþ yapmadan eriþilemeyecek sayfalara yönlendirme
+    });
+
+
+
 
 builder.Services.AddAuthorization();
+
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 

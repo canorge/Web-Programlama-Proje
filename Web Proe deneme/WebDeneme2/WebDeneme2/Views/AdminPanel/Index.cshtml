@@ -9,6 +9,7 @@
 <div class="CalisanPanelIndex">
 
     <h2>Çalışanlar</h2>
+    <a class="btn btn-success" id="btnEkle" asp-action="Create" asp-controller="AdminPanel" asp-route-id="@Model.Admin.Id">Çalışan Ekle</a>
     @foreach(var calisan in Model.Calisanlar)
     {
         <div class="card">

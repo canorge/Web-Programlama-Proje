@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "ContainingType": "WebDeneme2.Controllers.HizmetApiController",
+    "Method": "GetHizmetler",
+    "RelativePath": "api/HizmetApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebDeneme2.Models.Hizmet, WebDeneme2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

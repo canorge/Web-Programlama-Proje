@@ -217,3 +217,71 @@ transition: all 0.3s ease;
         width: 100%;
     }
 }
+
+
+
+/***************************************************/
+
+.createCalisan {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .createCalisan h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .createCalisan .form-group {
+        margin-bottom: 20px;
+    }
+
+    .createCalisan .form-label {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .createCalisan .form-control {
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .createCalisan .form-check {
+        margin-bottom: 10px;
+    }
+
+    .createCalisan .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+    .createCalisan .btn-success {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        margin-top: 20px;
+    }
+
+        .createCalisan .btn-success:hover {
+            background-color: #218838;
+        }
+
+    .createCalisan .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        margin-top: 10px;
+    }
+
+        .createCalisan .btn-secondary:hover {
+            background-color: #5a6268;
+        }

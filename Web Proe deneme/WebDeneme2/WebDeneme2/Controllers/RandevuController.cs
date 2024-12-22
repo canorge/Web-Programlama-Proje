@@ -6,7 +6,7 @@ using WebDeneme2.Models;
 
 namespace WebDeneme2.Controllers
 {
-    [Authorize] // Tüm action'lar için yetkilendirme kontrolü
+    //[Authorize] // Tüm action'lar için yetkilendirme kontrolü
     public class RandevuController : Controller
     {
         private readonly DataContext _context;
@@ -19,33 +19,32 @@ namespace WebDeneme2.Controllers
         // Randevu oluşturma formunu gösteren action
         public async Task<IActionResult> Create()
         {
-            ViewBag.Hizmetler = new SelectList(await _context.Hizmetler.ToListAsync(), "Id", "Ad");
+            ViewBag.Hizmetler = await _context.Hizmetler.ToListAsync();
             return View();
         }
 
         // Randevu oluşturma işlemi
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Randevu randevu)
+        public async Task<IActionResult> Create(Randevu randevu,int id)
         {
             if (ModelState.IsValid)
             {
                 // Kullanıcı kimliğini al
-                var userEmail = User.Identity?.Name;
+                //var userEmail = User.Identity?.Name;
 
-                if (userEmail == null)
-                {
-                    return RedirectToAction("Index", "GirisYap"); // Giriş sayfasına yönlendir
-                }
-
+               
                 // Müşteriyi veritabanından bul
                 var musteri = await _context.Musteriler
-                    .FirstOrDefaultAsync(m => m.Email == userEmail);
-
-                if (musteri == null)
+                    .FirstOrDefaultAsync(m => m.Id==id);
+                if(musteri == null)
                 {
-                    return Unauthorized();
+                    return View();
                 }
+                //if (musteri == null )
+                //{
+                //    return Unauthorized();
+                //}
 
                 // Randevuya müşteri bilgisi ekle
                 randevu.MusteriId = musteri.Id;
@@ -90,8 +89,10 @@ namespace WebDeneme2.Controllers
                 .Where(ch => ch.HizmetId == hizmetId)
                 .Select(ch => new
                 {
-                    Id = ch.Calisan.Id,
-                    AdSoyad = $"{ch.Calisan.Ad} {ch.Calisan.Soyad}"
+                    id = ch.Calisan.Id,
+                    AdSoyad = !string.IsNullOrEmpty(ch.Calisan.Ad) && !string.IsNullOrEmpty(ch.Calisan.Soyad)
+                      ? $"{ch.Calisan.Ad} {ch.Calisan.Soyad}"
+                      : "Ad/Soyad Bilgisi Yok"
                 })
                 .ToListAsync();
 

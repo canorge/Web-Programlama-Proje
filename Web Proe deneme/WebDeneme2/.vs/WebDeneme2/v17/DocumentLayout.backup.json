@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\girisyap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\girisyap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\controllers\\randevucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\controllers\\randevucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\shared\\_layout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\shared\\_layout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\randevu\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\randevu\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\models\\randevuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\models\\randevuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|c:\\users\\canor\\onedrive\\masa\u00FCst\u00FC\\web proe deneme\\webdeneme2\\webdeneme2\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1F675F-5873-4D82-9982-1F8E133C56FF}|WebDeneme2\\WebDeneme2.csproj|solutionrelative:webdeneme2\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "_Layout2.cshtml",
               "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Shared\\_Layout2.cshtml",
               "RelativeDocumentMoniker": "WebDeneme2\\Views\\Shared\\_Layout2.cshtml",
               "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Shared\\_Layout2.cshtml",
               "RelativeToolTip": "WebDeneme2\\Views\\Shared\\_Layout2.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAACAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T20:04:14.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\GirisYap\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebDeneme2\\Views\\GirisYap\\Index.cshtml",
-              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\GirisYap\\Index.cshtml",
-              "RelativeToolTip": "WebDeneme2\\Views\\GirisYap\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T19:25:46.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebDeneme2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebDeneme2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T19:17:06.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Program.cs",
-              "RelativeDocumentMoniker": "WebDeneme2\\Program.cs",
-              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Program.cs",
-              "RelativeToolTip": "WebDeneme2\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T19:12:09.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Randevu\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebDeneme2\\Views\\Randevu\\Create.cshtml",
-              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Views\\Randevu\\Create.cshtml",
-              "RelativeToolTip": "WebDeneme2\\Views\\Randevu\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T19:04:28.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RandevuViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\RandevuViewModel.cs",
-              "RelativeDocumentMoniker": "WebDeneme2\\Models\\RandevuViewModel.cs",
-              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\RandevuViewModel.cs",
-              "RelativeToolTip": "WebDeneme2\\Models\\RandevuViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T18:58:15.121Z",
+              "WhenOpened": "2024-12-22T17:56:49.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RandevuController.cs",
-              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Controllers\\RandevuController.cs",
-              "RelativeDocumentMoniker": "WebDeneme2\\Controllers\\RandevuController.cs",
-              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Controllers\\RandevuController.cs",
-              "RelativeToolTip": "WebDeneme2\\Controllers\\RandevuController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwE4AAAA+AAAAAAAAAA==",
+              "Title": "Randevu.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\Randevu.cs",
+              "RelativeDocumentMoniker": "WebDeneme2\\Models\\Randevu.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\Models\\Randevu.cs",
+              "RelativeToolTip": "WebDeneme2\\Models\\Randevu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T18:22:24.481Z",
+              "WhenOpened": "2024-12-22T16:03:30.768Z",
               "EditorCaption": ""
             }
           ]

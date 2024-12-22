@@ -1,0 +1,53 @@
+﻿@model WebDeneme2.Models.AdminViewModel
+@{
+    Layout = "/Views/Shared/_Layout4.cshtml";
+}
+<h2>Çalışan Ekle</h2>
+
+<form method="post" asp-action="Create" asp-controller="AdminPanel" asp-route-id="@Model.Admin.Id">
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <div class="mb-3">
+        <label for="Ad" class="form-label">Ad</label>
+        <input type="text" class="form-control" id="Ad" name="Ad" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="Soyad" class="form-label">Soyad</label>
+        <input type="text" class="form-control" id="Soyad" name="Soyad" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" required />
+    </div>
+    <div class="mb-3">
+        <label for="Sifre" class="form-label">Şifre</label>
+        <input type="password" class="form-control" id="Sifre" name="Sifre" required />
+    </div>
+    <div class="mb-3">
+        <label for="TelNo" class="form-label">Telefon</label>
+        <input type="text" class="form-control" id="TelNo" name="TelNo" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="Cinsiyet" class="form-label">Cinsiyet</label>
+        <select class="form-select" id="Cinsiyet" name="Cinsiyet" required>
+            <option value="Erkek">Erkek</option>
+            <option value="Kadın">Kadın</option>
+        </select>
+    </div>
+
+    <h3>Uzmanlık Alanları</h3>
+    <div class="form-check">
+        @foreach (var hizmet in Model.Hizmetler)
+        {
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Hizmet_@hizmet.Id" name="HizmetIds" value="@hizmet.Id" />
+                <label class="form-check-label" for="Hizmet_@hizmet.Id">@hizmet.Ad</label>
+            </div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

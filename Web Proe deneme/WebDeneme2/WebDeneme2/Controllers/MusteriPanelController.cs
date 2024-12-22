@@ -55,6 +55,10 @@ namespace WebDeneme2.Controllers
             return View(musteri);   
         }
 
+        //public async Task<IActionResult> Create(int id)
+        //{
+
+        //}
     }
 }
 

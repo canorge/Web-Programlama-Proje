@@ -15,7 +15,7 @@
                 <a class="navbar-brand" href="#">Müşteri Paneli</a>
                 <div class="d-flex">
                     <span class="text-white me-3">Hoşgeldiniz,@Model?.Ad @Model?.Soyad</span>
-                    <a class="btn btn-outline-light btn-sm" asp-controller="Randevu" asp-action="Create">Randevu Al</a>
+                    <a class="btn btn-outline-light btn-sm" asp-controller="Randevu" asp-action="Create" asp-route-id="@Model.Id">Randevu Al</a>
                     <a class="btn btn-outline-light btn-sm" asp-controller="home" asp-action="Index">Çıkış</a>
                 </div>
             </div>

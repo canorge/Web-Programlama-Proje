@@ -300,6 +300,76 @@ namespace WebDeneme2.Controllers
             return View(model);
         }
 
+        public async  Task<IActionResult> Create(int id)
+        {
+            var admin= await _dataContext.Adminler.FirstOrDefaultAsync(x => x.Id == id);
+            if (admin == null)
+            {
+                Console.WriteLine($"Admin with id {id} not found.");
+                return NotFound();
+            }
+            var hizmetler = await _dataContext.Hizmetler.ToListAsync(); // Hizmetler tablosundaki tüm verileri alıyoruz
+            var model = new AdminViewModel
+            {
+                Id=id,
+                Admin = admin ?? new Admin(),
+                Hizmetler = hizmetler // Hizmetler listesini modele atıyoruz
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(int id,Calisan model, List<int> HizmetIds)
+        {
+            if (ModelState.IsValid)
+            {
+                // Yeni çalışan oluşturma
+                var calisan = new Calisan
+                {
+                    Ad = model.Ad,
+                    Soyad = model.Soyad,
+                    Email = model.Email,
+                    Sifre = model.Sifre, // Şifreyi şifrelemek gerekebilir
+                    TelNo = model.TelNo,
+                    Cinsiyet = model.Cinsiyet,
+                    // Hizmetler ID'leri, daha sonra veritabanında ilişkilendireceğiz
+                };
+
+                // Hizmetlerin ilişkilendirilmesi
+                foreach (var hizmetId in HizmetIds)
+                {
+                    var hizmet = await _dataContext.Hizmetler.FirstOrDefaultAsync(h => h.Id == hizmetId);
+                    if (hizmet != null)
+                    {
+                        calisan.UzmanlikAlanlari.Add(new CalisanHizmet
+                        {
+                            Calisan = calisan,
+                            Hizmet = hizmet
+                        });
+                    }
+                }
+
+                // Çalışanı veritabanına ekleyelim
+                _dataContext.Calisanlar.Add(calisan);
+                _dataContext.SaveChanges();
+
+                return RedirectToAction("Index",new {id=id}); // Başka bir sayfaya yönlendirebilirsiniz
+            }
+
+            // Model geçersizse, formu tekrar göster
+
+
+            var admin = await _dataContext.Adminler.FirstOrDefaultAsync(x => x.Id == id);
+            var hizmetler = await _dataContext.Hizmetler.ToListAsync(); // Hizmetler tablosundaki tüm verileri alıyoruz
+            var ViewModel = new AdminViewModel
+            {
+                Admin = admin,
+                Hizmetler = hizmetler // Hizmetler listesini modele atıyoruz
+            };
+            return View(ViewModel);
+        }
+
+
 
     }
 }
