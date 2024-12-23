@@ -1,4 +1,4 @@
-﻿@model Musteri
+﻿@model MusteriViewModel
 @{
     Layout = "/Views/Shared/_Layout2.cshtml";
 }
@@ -6,10 +6,10 @@
 <h2>Profil Bilgilerim</h2>
 <div class="card">
     <div class="card-body" id="bilgiAlani">
-        <p><strong>Ad:</strong> @Model.Ad</p>
-        <p><strong>Soyad:</strong> @Model.Soyad</p>
-        <p><strong>Email:</strong> @Model.Email</p>
-        <p><strong>Telefon:</strong> @Model.TelNo</p>
+        <p><strong>Ad:</strong> @Model.Musteri.Ad</p>
+        <p><strong>Soyad:</strong> @Model.Musteri.Soyad</p>
+        <p><strong>Email:</strong> @Model.Musteri.Email</p>
+        <p><strong>Telefon:</strong> @Model.Musteri.TelNo</p>
         <button id="btnGuncelle" class="btn btn-primary">Güncelle</button>
     </div>
 
@@ -19,19 +19,19 @@
         <form method="post" asp-action="Index" asp-controller="MusteriPanel">
             <div class="mb-3">
                 <label for="Ad" class="form-label"><strong>Ad</strong></label>
-                <input type="text" class="form-control" id="Ad" name="Ad" value="@Model.Ad" />
+                <input type="text" class="form-control" id="Ad" name="Ad" value="@Model.Musteri.Ad" />
             </div>
             <div class="mb-3">
                 <label for="Soyad" class="form-label"><strong>Soyad</strong></label>
-                <input type="text" class="form-control" id="Soyad" name="Soyad" value="@Model.Soyad" />
+                <input type="text" class="form-control" id="Soyad" name="Soyad" value="@Model.Musteri.Soyad" />
             </div>
             <div class="mb-3">
                 <label for="Email" class="form-label"><strong>Email</strong></label>
-                <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" />
+                <input type="email" class="form-control" id="Email" name="Email" value="@Model.Musteri.Email" />
             </div>
             <div class="mb-3">
                 <label for="TelNo" class="form-label"><strong>Telefon</strong></label>
-                <input type="text" class="form-control" id="TelNo" name="TelNo" value="@Model.TelNo" />
+                <input type="text" class="form-control" id="TelNo" name="TelNo" value="@Model.Musteri.TelNo" />
             </div>
             <button type="submit" class="btn btn-success">Kaydet</button>
             <button type="button" id="btnIptal" class="btn btn-secondary">İptal</button>

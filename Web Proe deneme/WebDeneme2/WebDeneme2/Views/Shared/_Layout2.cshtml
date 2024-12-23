@@ -14,8 +14,8 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Müşteri Paneli</a>
                 <div class="d-flex">
-                    <span class="text-white me-3">Hoşgeldiniz,@Model?.Ad @Model?.Soyad</span>
-                    <a class="btn btn-outline-light btn-sm" asp-controller="Randevu" asp-action="Create" asp-route-id="@Model.Id">Randevu Al</a>
+                    <span class="text-white me-3">Hoşgeldiniz,@Model?.Musteri.Ad @Model?.Musteri.Soyad</span>
+                    <a class="btn btn-outline-light btn-sm" asp-controller="MusteriPanel" asp-action="Create" asp-route-id="@Model.Musteri.Id">Randevu Al</a>
                     <a class="btn btn-outline-light btn-sm" asp-controller="home" asp-action="Index">Çıkış</a>
                 </div>
             </div>
@@ -24,8 +24,8 @@
 
     <div class="sidebar">
         <h4>Menü</h4>
-        <a asp-controller="MusteriPanel" asp-action="Index" >Profilim</a>
-        <a asp-controller="MusteriPanel" asp-action="Randevular" asp-route-id="@Model?.Id">Randevularım</a>
+        <a asp-controller="MusteriPanel" asp-action="Index" asp-route-id="@Model?.Musteri.Id">Profilim</a>
+        <a asp-controller="MusteriPanel" asp-action="Randevular" asp-route-id="@Model?.Musteri.Id">Randevularım</a>
     </div>
 
 

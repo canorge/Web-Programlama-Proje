@@ -25,7 +25,13 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/GirisYap/Index"; // Giriþ yapmadan eriþilemeyecek sayfalara yönlendirme
     });
 
-
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Oturum süresi
+    options.Cookie.HttpOnly = true; // Güvenlik
+    options.Cookie.IsEssential = true; // GDPR uyumluluðu
+});
 
 
 builder.Services.AddAuthorization();
@@ -42,6 +48,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

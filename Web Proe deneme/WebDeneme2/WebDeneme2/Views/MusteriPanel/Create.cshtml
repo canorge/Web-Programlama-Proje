@@ -1,0 +1,101 @@
+﻿@model MusteriViewModel
+
+@{
+    ViewData["Title"] = "Randevu Oluştur";
+    Layout = "/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-controller="MusteriPanel" asp-action="Create" method="post">
+    <input type="hidden" name="Musteri.Id" value="@Model.Musteri.Id" />
+    <div class="form-group">
+        <label for="HizmetId">Hizmet Seç</label>
+        <select id="HizmetId" name="Randevu.HizmetId" class="form-control">
+            <option value="">Bir Hizmet Seçin</option>
+            @foreach (var hizmet in ViewBag.hizmetler )
+            {
+                <option  value="@hizmet.Id">@hizmet.Ad</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="CalisanId">Çalışan Seç</label>
+        <select id="CalisanId" name="Randevu.CalisanId" class="form-control">
+            <option value="">Önce Hizmet Seçin</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="RandevuTarihi">Randevu Tarihi ve Saati</label>
+        <input type="datetime-local" id="RandevuTarihi" name="Randevu.RandevuTarihi" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Randevu Oluştur</button>
+</form>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        // $(document).ready(function () {
+        //     // Hizmet seçildiğinde çalışanları getir
+        //     $('#HizmetId').change(function () {
+        //         var hizmetId = $(this).val();
+
+        //         if (hizmetId) {
+        //             // Hizmet seçildiğinde çalışanları al
+        //             $.get('/Randevu/GetCalisanlarByHizmetId', { hizmetId: hizmetId }, function (calisanlar) {
+        //                 console.log(calisanlar);
+        //                 $('#CalisanId').empty(); // Önceki çalışanları temizle
+        //                 $('#CalisanId').append('<option value="">Bir Çalışan Seçin</option>');
+
+        //                 $.each(calisanlar, function (index, calisan) {
+        //                     $('#CalisanId').append('<option value="' + calisan.id + '">' + calisan.AdSoyad + '</option>');
+        //                 });
+        //             });
+        //         } else {
+        //             // Hizmet seçilmezse, çalışanları temizle
+        //             $('#CalisanId').empty();
+        //             $('#CalisanId').append('<option value="">Önce Hizmet Seçin</option>');
+        //         }
+        //     });
+        // });
+
+        $(document).ready(function () {
+            // Hizmet seçildiğinde çalışanları getir
+            $('#HizmetId').change(function () {
+                var hizmetId = $(this).val();
+
+                if (hizmetId) {
+                    // Hizmet seçildiğinde çalışanları al
+                    $.get('/MusteriPanel/GetCalisanlarByHizmetId', { hizmetId: hizmetId }, function (calisanlar) {
+                        console.log(calisanlar); // Gelen veriyi kontrol edin
+                        $('#CalisanId').empty(); // Önceki çalışanları temizle
+                        $('#CalisanId').append('<option value="">Bir Çalışan Seçin</option>');
+
+                        // Gelen veriyi kontrol et
+                        if (calisanlar && calisanlar.length > 0) { 
+                            $.each(calisanlar, function (index, calisan) {
+                                
+                                console.log(calisan); // Çalışan objesini kontrol edin
+                                console.log(calisan.adSoyad);
+                                $('#CalisanId').append('<option value="'+calisan.id+'">' + calisan.adSoyad + '</option>');
+                            });
+                        } else {
+                            $('#CalisanId').append('<option value="">Bu hizmet için çalışan bulunmamaktadır</option>');
+                        }
+                    }).fail(function (xhr, status, error) {
+                        console.error("AJAX isteği başarısız oldu: ", status, error);
+                    });
+                } else {
+                    // Hizmet seçilmezse, çalışanları temizle
+                    $('#CalisanId').empty();
+                    $('#CalisanId').append('<option value="">Önce Hizmet Seçin</option>');
+                }
+            });
+        });
+
+    </script>
+}

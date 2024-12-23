@@ -1,14 +1,15 @@
-﻿@model WebDeneme2.Models.Musteri
+﻿@model MusteriViewModel
 
 @{
     Layout = "/Views/Shared/_Layout2.cshtml";
     ViewData["Title"] = "Müşteri Randevuları";
 }
 
-<h2>@Model.Ad @Model.Soyad - Randevuları</h2>
+<h2>@Model.Musteri.Ad @Model.Musteri.Soyad - Randevuları</h2>
 
-@if (Model.Randevular != null && Model.Randevular.Any())
+@if (Model.Musteri.Randevular != null && Model.Musteri.Randevular.Any())
 {
+  
     <table class="table">
         <thead>
             <tr>
@@ -16,16 +17,26 @@
                 <th>Çalışan</th>
                 <th>Hizmet</th>
                 <th>Süre</th>
+                <th>Durum</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var randevu in Model.Randevular)
+            @foreach (var randevu in Model.Musteri.Randevular)
             {
-                <tr>
+                // Satır arka plan rengini belirlemek için durum kontrolü
+                var rowClass = randevu.RandevuDurum switch
+                {
+                    "Bekliyor" => "table-warning",  // Sarı renk
+                    "Red" => "table-danger",         // Kırmızı renk
+                    "Onay" => "table-success",      // Yeşil renk
+                    _ => "" // Varsayılan (boş)
+                };
+                <tr class="@rowClass">
                     <td>@randevu.RandevuTarihi.ToString("dd/MM/yyyy HH:mm")</td>
                     <td>@randevu.Calisan?.Ad @randevu.Calisan?.Soyad</td>
                     <td>@randevu.Hizmet?.Ad</td>
                     <td>@randevu.Hizmet?.Sure</td>
+                    <td>@randevu.RandevuDurum</td>
                 </tr>
             }
         </tbody>

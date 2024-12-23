@@ -19,6 +19,13 @@ namespace WebDeneme2.Controllers
         // Randevu oluşturma formunu gösteren action
         public async Task<IActionResult> Create()
         {
+            var role = HttpContext.Session.GetString("Role");
+
+            // Eğer oturumda müşteri rolü yoksa Giriş Yap sayfasına yönlendir
+            if (string.IsNullOrEmpty(role) || role != "Müşteri")
+            {
+                return RedirectToAction("Index", "GirisYap");
+            }
             ViewBag.Hizmetler = await _context.Hizmetler.ToListAsync();
             return View();
         }

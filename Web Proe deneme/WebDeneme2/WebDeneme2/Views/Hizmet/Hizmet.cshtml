@@ -23,7 +23,7 @@
                 <p class="card-text">@item.Aciklama</p>
                 <p><strong>Süre: </strong>@item.Sure dakika</p>
                 <p><strong>Ücret: </strong>@item.Ucret.ToString("C2")</p>
-                <a href="/Rezervasyon" class="hizmetBtn">Randevu Al</a>
+                <a asp-controller="Randevu" asp-action="Create" class="hizmetBtn">Randevu Al</a>
             </div>
         </div>
     }

@@ -36,23 +36,23 @@
 
         <!--  Form Başlangıçta gizli  -->
         <div class="card-body" id="formAlani" style="display: none;">
-            <form method="post" asp-action="Index" asp-controller="CalisanPanel">
-                <input type="hidden" name="Calisan.id" value="Model.Calisan.Id" />
+            <form method="post" asp-action="Index" asp-controller="CalisanPanel" asp-route-id="@Model.Calisan.Id">
+                <input type="hidden" name="Calisan.Id" value="@Model.Calisan.Id" />
                 <div class="mb-3">
                     <label for="Ad" class="form-label"><strong>Ad</strong></label>
-                    <input type="text" class="form-control" id="Ad" name="Ad" value="@Model.Calisan.Ad" />
+                    <input type="text" class="form-control" id="Ad" name="Calisan.Ad" value="@Model.Calisan.Ad" />
                 </div>
                 <div class="mb-3">
                     <label for="Soyad" class="form-label"><strong>Soyad</strong></label>
-                    <input type="text" class="form-control" id="Soyad" name="Soyad" value="@Model.Calisan.Soyad" />
+                    <input type="text" class="form-control" id="Soyad" name="Calisan.Soyad" value="@Model.Calisan.Soyad" />
                 </div>
                 <div class="mb-3">
                     <label for="Email" class="form-label"><strong>Email</strong></label>
-                    <input type="email" class="form-control" id="Email" name="Email" value="@Model.Calisan.Email" />
+                    <input type="email" class="form-control" id="Email" name="Calisan.Email" value="@Model.Calisan.Email" />
                 </div>
                 <div class="mb-3">
                     <label for="TelNo" class="form-label"><strong>Telefon</strong></label>
-                    <input type="text" class="form-control" id="TelNo" name="TelNo" value="@Model.Calisan.TelNo" />
+                    <input type="text" class="form-control" id="TelNo" name="Calisan.TelNo" value="@Model.Calisan.TelNo" />
                 </div>
 
                 <div class="form-check" >

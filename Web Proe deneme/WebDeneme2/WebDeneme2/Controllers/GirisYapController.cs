@@ -27,16 +27,22 @@ namespace WebDeneme2.Controllers
             var Musteri= await _dataContext.Musteriler.FirstOrDefaultAsync(m=>m.Email == model.Email && m.Sifre==model.Sifre);
             if (Musteri != null)
             {
+                HttpContext.Session.SetString("Role", "Musteri");
+                HttpContext.Session.SetInt32("UserId", Musteri.Id);
                 return RedirectToAction("Index","MusteriPanel", new { id = Musteri.Id });
             }
             var Calisan = await _dataContext.Calisanlar.FirstOrDefaultAsync(c => c.Email == model.Email && c.Sifre == model.Sifre);
             if (Calisan != null)
             {
+                HttpContext.Session.SetString("Role", "Calisan");
+                HttpContext.Session.SetInt32("UserId", Calisan.Id);
                 return RedirectToAction("Index", "CalisanPanel", new { id = Calisan.Id });
             }
             var Admin = await _dataContext.Adminler.FirstOrDefaultAsync(a => a.Email == model.Email && a.Sifre == model.Sifre);
             if (Admin != null)
             {
+                HttpContext.Session.SetString("Role", "Admin");
+                HttpContext.Session.SetInt32("UserId", Admin.Id);
                 return RedirectToAction("Index", "AdminPanel", new { id = Admin.Id });
             }
             return NotFound();

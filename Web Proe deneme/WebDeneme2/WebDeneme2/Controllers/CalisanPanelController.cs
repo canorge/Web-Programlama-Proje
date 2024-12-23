@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebDeneme2.Filters;
 using WebDeneme2.Models;
 
 
 
 namespace WebDeneme2.Controllers
 {
+    [CustomAuthorize("Calisan")]
     public class CalisanPanelController :Controller
     {
         private readonly DataContext _dataContext;
@@ -43,54 +45,19 @@ namespace WebDeneme2.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(CalisanViewModel model)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    // Çalışanı id'ye göre veritabanından bul
-            //    var calisan = await _dataContext.Calisanlar
-            //                                     .Include(c => c.UzmanlikAlanlari)
-            //                                     .ThenInclude(u => u.Hizmet)
-            //                                     .FirstOrDefaultAsync(c => c.Id == model.Calisan.Id);
-            //    var calisanHizmet = await _dataContext.CalisanHizmetleri.FirstOrDefaultAsync(ch => ch.Calisan.Id == calisan.Id);
-            //    if (calisan == null)
-            //    {
-            //        return NotFound();  // Çalışan bulunamadıysa 404 döner
-            //    }
-
-            //    // Çalışan bilgilerini güncelle
-            //    calisan.Ad = model.Calisan.Ad;
-            //    calisan.Soyad = model.Calisan.Soyad;
-            //    calisan.Email = model.Calisan.Email;
-            //    calisan.TelNo = model.Calisan.TelNo;
-
-            //    // Uzmanlık alanlarını temizle ve yeni verileri ekle
-            //    calisan.UzmanlikAlanlari.Clear();
-            //    foreach (var hizmetıd in model.HizmetIds)  // hizmetıds formdan gönderilen seçili hizmetlerin id'leri
-            //    {
-            //        calisan.UzmanlikAlanlari.Add(new CalisanHizmet
-            //        {
-            //            HizmetId = hizmetıd,
-            //            CalisanId = calisan.Id
-            //        });
-            //    }
-
-
-            //    foreach(var hizmet in model.HizmetIds)
-            //    {
-            //        calisanHizmet.HizmetId = hizmet;
-            //    }
-            //    _dataContext.CalisanHizmetleri.Update(calisanHizmet);
-            //    // Çalışan bilgilerini güncelle ve veritabanına kaydet
-            //    _dataContext.Calisanlar.Update(calisan);
-            //    await _dataContext.SaveChangesAsync();
-
-            //    // Başarıyla güncellendikten sonra tekrar çalışanın detay sayfasına yönlendir
-            //    return RedirectToAction("Index", new { id = calisan.Id });
-            //}
-
-            //// Model geçersizse aynı sayfayı tekrar göster
-            //return RedirectToAction("Index", new { id = model.Calisan.Id });
+            if(model == null)
+            {
+                return NotFound();
+            }
+            if (model.TumHizmetler == null)
+            {
+                model.TumHizmetler = await _dataContext.Hizmetler.ToListAsync();
+            }
             if (!ModelState.IsValid)
             {
+                var errors = ModelState.Values.SelectMany(v => v.Errors)
+                                 .Select(e => e.ErrorMessage)
+                                 .ToList();
                 // Geçerli olmayan model durumunda yapılacak işlemler
                 return View(model);
             }
@@ -140,7 +107,7 @@ namespace WebDeneme2.Controllers
             await _dataContext.SaveChangesAsync();
 
             // Güncelleme başarılıysa, tekrar çalışanın listesine yönlendir
-            return RedirectToAction("Index", new { id = model.Calisan.Id });
+            return RedirectToAction("Index");
         }
 
 

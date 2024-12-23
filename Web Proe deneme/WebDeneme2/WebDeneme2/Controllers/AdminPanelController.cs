@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebDeneme2.Models;
-
+using WebDeneme2.Filters;
 
 
 namespace WebDeneme2.Controllers
 {
+    [CustomAuthorize("Admin")]
     public class AdminPanelController :Controller
     {
         private readonly DataContext _dataContext;
@@ -247,6 +248,74 @@ namespace WebDeneme2.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> KabulEt(int randevuId, int adminId)
+        {
+            // Find the admin based on the adminId
+            var admin = await _dataContext.Adminler.FirstOrDefaultAsync(x => x.Id == adminId);
+            if (admin == null)
+            {
+                return NotFound(); // If the admin doesn't exist, return 404
+            }
+
+            // Find the appointment using randevuId
+            var randevu = await _dataContext.Randevular.FirstOrDefaultAsync(r => r.Id == randevuId);
+            if (randevu == null)
+            {
+                return NotFound(); // If the appointment doesn't exist, return 404
+            }
+
+            // Check if the appointment is already in a state that can be accepted
+            if (randevu.RandevuDurum != "Bekliyor")
+            {
+                return BadRequest("Only pending appointments can be accepted."); // If the appointment is not pending, return an error
+            }
+
+            // Update the status to "Onay"
+            randevu.RandevuDurum = "Onay";
+
+            // Save changes to the database
+            _dataContext.Randevular.Update(randevu);
+            await _dataContext.SaveChangesAsync();
+
+            // Redirect back to the Randevular page after accepting the appointment
+            return RedirectToAction("Randevular", new { id = adminId });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Reddet(int randevuId, int adminId)
+        {
+            // Find the admin based on the adminId
+            var admin = await _dataContext.Adminler.FirstOrDefaultAsync(x => x.Id == adminId);
+            if (admin == null)
+            {
+                return NotFound(); // If the admin doesn't exist, return 404
+            }
+
+            // Find the appointment using randevuId
+            var randevu = await _dataContext.Randevular.FirstOrDefaultAsync(r => r.Id == randevuId);
+            if (randevu == null)
+            {
+                return NotFound(); // If the appointment doesn't exist, return 404
+            }
+
+            // Check if the appointment is already in a state that can be accepted
+            if (randevu.RandevuDurum != "Bekliyor")
+            {
+                return BadRequest("Only pending appointments can be accepted."); // If the appointment is not pending, return an error
+            }
+
+            // Update the status to "Onay"
+            randevu.RandevuDurum = "Red";
+
+            // Save changes to the database
+            _dataContext.Randevular.Update(randevu);
+            await _dataContext.SaveChangesAsync();
+
+            // Redirect back to the Randevular page after accepting the appointment
+            return RedirectToAction("Randevular", new { id = adminId });
+        }
+
         public async Task<IActionResult> RedRandevu(int id)
         {
             var admin = await _dataContext.Adminler.FirstOrDefaultAsync(x => x.Id == id);
@@ -288,6 +357,7 @@ namespace WebDeneme2.Controllers
             var tumRandevular = await _dataContext.Randevular
                                                   .Include(r => r.Hizmet) // Hizmet bilgilerini ekle
                                                   .Include(r => r.Musteri) // Müşteri bilgilerini ekle
+                                                  .Include(r=>r.Calisan)
                                                   .ToListAsync();
 
             // Model oluştur
