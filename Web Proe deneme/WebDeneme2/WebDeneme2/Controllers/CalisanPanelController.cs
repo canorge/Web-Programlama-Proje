@@ -118,6 +118,7 @@ namespace WebDeneme2.Controllers
             var calisan = await _dataContext.Calisanlar
                                      .Include(c => c.UzmanlikAlanlari)
                                      .ThenInclude(u => u.Hizmet)
+                                     .Include(c=>c.Randevular)
                                      .FirstOrDefaultAsync(c => c.Id == id);
 
             if (calisan == null)

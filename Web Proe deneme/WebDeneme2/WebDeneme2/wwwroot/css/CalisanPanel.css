@@ -285,3 +285,470 @@ transition: all 0.3s ease;
         .createCalisan .btn-secondary:hover {
             background-color: #5a6268;
         }
+
+
+
+
+
+        /*** Calisan Ýþler CSS  **/
+
+/* Genel Çalýþan Ýþler Bölümü */
+.CalisanIsler {
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+    .CalisanIsler h2 {
+        color: #343a40; /* Koyu gri baþlýk */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Tablo Tasarýmý */
+    .CalisanIsler .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+        .CalisanIsler .table thead {
+            background-color: #007bff; /* Baþlýk arka plan rengi */
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .CalisanIsler .table th,
+        .CalisanIsler .table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .CalisanIsler .table tbody tr:hover {
+            background-color: #f8f9fa; /* Hover efekti */
+        }
+
+        .CalisanIsler .table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Tablo içindeki metinlere uyumlu renkler */
+        .CalisanIsler .table td {
+            color: #495057;
+        }
+
+/* Mobil Uyumlu Tasarým */
+@media (max-width: 768px) {
+    .CalisanIsler .table {
+        border: 0;
+    }
+
+        .CalisanIsler .table thead {
+            display: none;
+        }
+
+        .CalisanIsler .table tr {
+            display: block;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .CalisanIsler .table td {
+            display: block;
+            text-align: right;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+            .CalisanIsler .table td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+                color: #007bff;
+                text-align: left;
+            }
+
+            .CalisanIsler .table td:last-child {
+                border-bottom: 0;
+            }
+}
+
+/* Mesaj Stili */
+.CalisanIsler p {
+    text-align: center;
+    font-size: 16px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+        /***    admin panel tum randevular css ****/
+
+/* Genel Tüm Randevular Bölümü */
+.tumRandevular {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+    .tumRandevular h2 {
+        color: #009879;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Tablo Stilleri */
+    .tumRandevular table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        font-size: 16px;
+        text-align: left;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+        .tumRandevular table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .tumRandevular table th,
+        .tumRandevular table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .tumRandevular table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .tumRandevular table tbody tr:hover {
+            background-color: #f1f1f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .tumRandevular table tbody tr td {
+            color: #333333;
+        }
+
+/* Mobil Uyumlu Tasarým */
+@media (max-width: 768px) {
+    .tumRandevular table {
+        border: 0;
+    }
+
+        .tumRandevular table thead {
+            display: none;
+        }
+
+        .tumRandevular table tbody tr {
+            display: block;
+            margin-bottom: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+            .tumRandevular table tbody tr td {
+                display: block;
+                text-align: right;
+                font-size: 14px;
+                padding: 10px;
+                border-bottom: 1px solid #eeeeee;
+                position: relative;
+            }
+
+                .tumRandevular table tbody tr td::before {
+                    content: attr(data-label);
+                    float: left;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #009879;
+                }
+
+                .tumRandevular table tbody tr td:last-child {
+                    border-bottom: 0;
+                }
+}
+
+
+/*** Admin paneli red randevu css ****/
+
+/* Genel RedRandevu Bölümü */
+.RedRandevu {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+    .RedRandevu h2 {
+        color: #d9534f; /* Kýrmýzý tonu */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Liste Tasarýmý */
+    .RedRandevu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .RedRandevu li {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .RedRandevu li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Her Satýrdaki Metin Stili */
+        .RedRandevu li p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+            .RedRandevu li p:first-child {
+                font-weight: bold;
+                color: #d9534f; /* Baþlýk rengi */
+            }
+
+            .RedRandevu li p span {
+                font-weight: bold;
+                color: #555;
+            }
+
+/* Mobil Uyumlu Tasarým */
+@media (max-width: 768px) {
+    .RedRandevu li {
+        padding: 10px;
+    }
+
+        .RedRandevu li p {
+            font-size: 14px;
+        }
+}
+
+
+/****  Admin Paneli Onaylý randevular css   ***/
+
+/* Genel OnayRandevu Bölümü */
+.OnayRandevu {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+    .OnayRandevu h2 {
+        color: #28a745; /* Yeþil tonu */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Tablo Tasarýmý */
+    .OnayRandevu table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .OnayRandevu thead {
+        background-color: #28a745; /* Baþlýk arka plan rengi */
+        color: #fff;
+    }
+
+    .OnayRandevu th, .OnayRandevu td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .OnayRandevu tbody tr:hover {
+        background-color: #f1f1f1; /* Hover efekti */
+    }
+
+    .OnayRandevu tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+/* Mobil Uyumlu Tasarým */
+@media (max-width: 768px) {
+    .OnayRandevu table {
+        border: 0;
+    }
+
+    .OnayRandevu thead {
+        display: none;
+    }
+
+    .OnayRandevu tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .OnayRandevu td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+
+        .OnayRandevu td:before {
+            content: attr(data-label);
+            position: absolute;
+            left: 10px;
+            font-weight: bold;
+            color: #28a745;
+            text-align: left;
+        }
+
+        .OnayRandevu td:last-child {
+            border-bottom: 0;
+        }
+}
+
+/*** Admin Panel Bekleyen Randevu css ***/
+
+/* Genel BekleyenRandevu Bölümü */
+.BekleyenRandevu {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+    .BekleyenRandevu h2 {
+        color: #007bff; /* Mavi ton */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Tablo Tasarýmý */
+    .BekleyenRandevu .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+        .BekleyenRandevu .table thead {
+            background-color: #007bff; /* Baþlýk arka plan rengi */
+            color: #fff;
+        }
+
+        .BekleyenRandevu .table th,
+        .BekleyenRandevu .table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .BekleyenRandevu .table tbody tr:hover {
+            background-color: #f1f1f1; /* Hover efekti */
+        }
+
+        .BekleyenRandevu .table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+    /* Kabul ve Reddet Butonlarý */
+    .BekleyenRandevu .btn {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .BekleyenRandevu .btn-success {
+        background-color: #28a745;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+        .BekleyenRandevu .btn-success:hover {
+            background-color: #218838;
+        }
+
+    .BekleyenRandevu .btn-danger {
+        background-color: #dc3545;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+        .BekleyenRandevu .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+/* Mobil Uyumlu Tasarým */
+@media (max-width: 768px) {
+    .BekleyenRandevu .table {
+        border: 0;
+    }
+
+        .BekleyenRandevu .table thead {
+            display: none;
+        }
+
+        .BekleyenRandevu .table tr {
+            display: block;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .BekleyenRandevu .table td {
+            display: block;
+            text-align: right;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+            .BekleyenRandevu .table td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+                color: #007bff;
+                text-align: left;
+            }
+
+            .BekleyenRandevu .table td:last-child {
+                border-bottom: 0;
+            }
+}

@@ -5,11 +5,14 @@
     ViewData["Title"] = "Çalışan İşleri";
 }
 
-<h2>@Model.Calisan.Ad @Model.Calisan.Soyad - İşleri</h2>
+
+<div class="CalisanIsler">
+
+    <h2>@Model.Calisan.Ad @Model.Calisan.Soyad - İşleri</h2>
 
 
 
-    @if(Model.Calisan.Randevular.Any(r=>r.RandevuTarihi >= DateTime.Now) && Model.Calisan.Randevular.Any(r=>r.RandevuDurum=="Kabul"))
+    @if (Model.Calisan.Randevular.Any(r => r.RandevuTarihi >= DateTime.Now) && Model.Calisan.Randevular.Any(r => r.RandevuDurum == "Onay"))
     {
         <table class="table">
             <thead>
@@ -26,10 +29,8 @@
                     <tr>
                         <td>@randevu.RandevuTarihi.ToString("dd/MM/yyyy HH:mm")</td>
                         <td>@randevu.Musteri?.Ad @randevu.Musteri?.Soyad</td>
-                        <td>@randevu.Hizmet?.Ad
-                        <td>
-                        <td>@randevu.Hizmet?.Sure
-                        <td>
+                        <td>@randevu.Hizmet?.Ad</td>
+                        <td>@randevu.Hizmet?.Sure</td>
                     </tr>
                 }
             </tbody>
@@ -39,3 +40,7 @@
     {
         <p style="color:black;">Henüz herhangi bir işiniz bulunmamaktadır.</p>
     }
+
+
+</div>
+

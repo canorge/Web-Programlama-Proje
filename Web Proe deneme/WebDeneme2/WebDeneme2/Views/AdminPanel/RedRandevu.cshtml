@@ -2,24 +2,28 @@
 @{
     Layout = "/Views/Shared/_Layout4.cshtml";
 }
-<h2>Reddedilen Randevular</h2>
+<div class="RedRandevu">
+    <h2>Reddedilen Randevular</h2>
 
-@if (Model.Randevular != null && Model.Randevular.Any())
-{
-    <ul>
-        @foreach (var randevu in Model.Randevular)
-        {
-            <li>
-                <p>Hizmet: @randevu.Hizmet?.Ad</p>
-                <p>Müşteri: @randevu.Musteri?.Ad @randevu.Musteri?.Soyad</p>
-                <p>Çalışan: @randevu.Calisan?.Ad @randevu.Calisan?.Soyad</p>
-                <p>Tarih: @randevu.RandevuTarihi</p>
-                <p>Durum: @randevu.RandevuDurum</p>
-            </li>
-        }
-    </ul>
-}
-else
-{
-    <p>Reddedilen randevu bulunmamaktadır.</p>
-}
+    @if (Model.Randevular != null && Model.Randevular.Any())
+    {
+        <ul>
+            @foreach (var randevu in Model.Randevular)
+            {
+                <li>
+                    <p>Hizmet: @randevu.Hizmet?.Ad</p>
+                    <p>Müşteri: @randevu.Musteri?.Ad @randevu.Musteri?.Soyad</p>
+                    <p>Çalışan: @randevu.Calisan?.Ad @randevu.Calisan?.Soyad</p>
+                    <p>Tarih: @randevu.RandevuTarihi</p>
+                    <p>Durum: @randevu.RandevuDurum</p>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>Reddedilen randevu bulunmamaktadır.</p>
+    }
+</div>
+
+

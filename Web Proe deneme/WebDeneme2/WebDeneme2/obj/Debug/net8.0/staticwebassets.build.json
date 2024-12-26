@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+X080OH1oolxC9vqMAqL6xzGICh33lHzjujl3OVZSbY=",
+  "Hash": "09yos9fIW0/1LX4/8r2kyjG0a0//1e0CSEtbIK3LOFM=",
   "Source": "WebDeneme2",
   "BasePath": "_content/WebDeneme2",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\kas.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\OIP.jpg",
+      "SourceId": "WebDeneme2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\",
+      "BasePath": "_content/WebDeneme2",
+      "RelativePath": "img/OIP.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\OIP.jpg"
     },
     {
       "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\sacbakim.jpg",
