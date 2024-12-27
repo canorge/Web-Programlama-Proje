@@ -251,68 +251,68 @@ namespace WebDeneme2.Controllers
         [HttpPost]
         public async Task<IActionResult> KabulEt(int randevuId, int adminId)
         {
-            // Find the admin based on the adminId
+            // id ye göre admin bul
             var admin = await _dataContext.Adminler.FirstOrDefaultAsync(x => x.Id == adminId);
             if (admin == null)
             {
-                return NotFound(); // If the admin doesn't exist, return 404
+                return NotFound(); // admin yoksa 404 
             }
 
-            // Find the appointment using randevuId
+            // Randevugetir
             var randevu = await _dataContext.Randevular.FirstOrDefaultAsync(r => r.Id == randevuId);
             if (randevu == null)
             {
-                return NotFound(); // If the appointment doesn't exist, return 404
+                return NotFound(); 
             }
 
-            // Check if the appointment is already in a state that can be accepted
+            
             if (randevu.RandevuDurum != "Bekliyor")
             {
-                return BadRequest("Only pending appointments can be accepted."); // If the appointment is not pending, return an error
+                return BadRequest("Only pending appointments can be accepted."); 
             }
 
-            // Update the status to "Onay"
+            
             randevu.RandevuDurum = "Onay";
 
-            // Save changes to the database
+            
             _dataContext.Randevular.Update(randevu);
             await _dataContext.SaveChangesAsync();
 
-            // Redirect back to the Randevular page after accepting the appointment
+            
             return RedirectToAction("Randevular", new { id = adminId });
         }
 
         [HttpPost]
         public async Task<IActionResult> Reddet(int randevuId, int adminId)
         {
-            // Find the admin based on the adminId
+            
             var admin = await _dataContext.Adminler.FirstOrDefaultAsync(x => x.Id == adminId);
             if (admin == null)
             {
-                return NotFound(); // If the admin doesn't exist, return 404
+                return NotFound(); 
             }
 
-            // Find the appointment using randevuId
+            
             var randevu = await _dataContext.Randevular.FirstOrDefaultAsync(r => r.Id == randevuId);
             if (randevu == null)
             {
-                return NotFound(); // If the appointment doesn't exist, return 404
+                return NotFound(); 
             }
 
-            // Check if the appointment is already in a state that can be accepted
+            
             if (randevu.RandevuDurum != "Bekliyor")
             {
-                return BadRequest("Only pending appointments can be accepted."); // If the appointment is not pending, return an error
+                return BadRequest("Only pending appointments can be accepted."); 
             }
 
-            // Update the status to "Onay"
+            
             randevu.RandevuDurum = "Red";
 
-            // Save changes to the database
+            
             _dataContext.Randevular.Update(randevu);
             await _dataContext.SaveChangesAsync();
 
-            // Redirect back to the Randevular page after accepting the appointment
+            
             return RedirectToAction("Randevular", new { id = adminId });
         }
 
@@ -325,7 +325,7 @@ namespace WebDeneme2.Controllers
                                                            .ToListAsync();
             var musteriler = await _dataContext.Musteriler.ToListAsync();
             var randevular = await _dataContext.Randevular
-                                                            .Where(r => r.RandevuDurum == "Red") // Filter pending appointments
+                                                            .Where(r => r.RandevuDurum == "Red") 
                                                             .Include(r => r.Hizmet)
                                                             .Include(r => r.Musteri)
                                                             .ToListAsync();

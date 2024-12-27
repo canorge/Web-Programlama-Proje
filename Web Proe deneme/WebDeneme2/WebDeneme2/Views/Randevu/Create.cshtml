@@ -38,30 +38,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
-        // $(document).ready(function () {
-        //     // Hizmet seçildiğinde çalışanları getir
-        //     $('#HizmetId').change(function () {
-        //         var hizmetId = $(this).val();
-
-        //         if (hizmetId) {
-        //             // Hizmet seçildiğinde çalışanları al
-        //             $.get('/Randevu/GetCalisanlarByHizmetId', { hizmetId: hizmetId }, function (calisanlar) {
-        //                 console.log(calisanlar);
-        //                 $('#CalisanId').empty(); // Önceki çalışanları temizle
-        //                 $('#CalisanId').append('<option value="">Bir Çalışan Seçin</option>');
-
-        //                 $.each(calisanlar, function (index, calisan) {
-        //                     $('#CalisanId').append('<option value="' + calisan.id + '">' + calisan.AdSoyad + '</option>');
-        //                 });
-        //             });
-        //         } else {
-        //             // Hizmet seçilmezse, çalışanları temizle
-        //             $('#CalisanId').empty();
-        //             $('#CalisanId').append('<option value="">Önce Hizmet Seçin</option>');
-        //         }
-        //     });
-        // });
-
         $(document).ready(function () {
             // Hizmet seçildiğinde çalışanları getir
             $('#HizmetId').change(function () {

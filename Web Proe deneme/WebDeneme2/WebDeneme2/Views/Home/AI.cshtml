@@ -1,58 +1,39 @@
-﻿ <form asp-action="AI">
-    <input type="file" name="photo" id="photo" />
-    <button type="submit">Fotoğraf Yükle</button>
-</form>
+﻿<div class="AIoneri">
+    <form asp-action="AI" method="post" enctype="multipart/form-data">
+        <label for="photo">Fotoğraf Yükle:</label>
+        <input type="file" name="photo" id="photo" required />
+        <br />
 
-@if (@ViewBag.AIResult != null)
-{
-    <h3>İşlenmiş Görsel:</h3>
-    <img src="@ViewBag.AIResult" alt="İşlenmiş Görsel" />
-}
+        <label for="hair_style">Saç Stili Seç:</label>
+        <select name="hair_style" id="hair_style" required>
+            <option value="BuzzCut">Buzz Cut</option>
+            <option value="Pompadour">Pompadour</option>
+            <option value="SlickBack">Slick Back</option>
+            <!-- Diğer saç stillerini buraya ekleyebilirsiniz -->
+        </select>
+        <br />
 
+        <label for="color">Saç Rengi Seç:</label>
+        <select name="color" id="color">
+            <option value="">Renk Seçin</option>
+            <option value="blonde">Blonde</option>
+            <option value="brown">Brown</option>
+            <option value="black">Black</option>
+            <!-- Diğer renkleri buraya ekleyebilirsiniz -->
+        </select>
+        <br />
 
-@*
-<script>
-    document.getElementById("uploadForm").addEventListener("submit", async function (event) {
-        event.preventDefault(); // Formun doğal submit işlemini engelliyoruz
+        <button type="submit">Fotoğraf Yükle</button>
+    </form>
 
-        const formData = new FormData();
-        const photoFile = document.getElementById("photo").files[0]; // Kullanıcının seçtiği fotoğraf
-        if (photoFile) {
-            formData.append("photo", photoFile);
+    @if (ViewBag.Error != null)
+    {
+        <p style="color: red;">@ViewBag.Error</p>
+    }
 
-            try {
-                // API'ye istek gönderiyoruz
-                const response = await fetch('https://api.magicapi.dev/api/v1/magicapi/restoration/predictions/REQUEST_ID', {
-                    method: 'POST',
-                    headers: {
-                        'accept': 'application/json',
-                        'x-magicapi-key': 'cm54fpsfs0001md03xq0cll5u'  
-                    },
-                    body: formData
-                });
-
-                if (response.ok) {
-                    const data = await response.json();
-                    // API'den dönen sonucu işleyin, örneğin ViewBag'e gönderme
-    @* ViewBag.AIResult = data.result *@
-     @*                   console.log(data);
-                    alert("İşlem başarılı!");
-
-                    // Eğer API görseli döndürüyorsa, sonucu ekranda göstermek için:
-    @* ViewBag.AIResult = data.result.imageUrl *@
-       @*             } else {
-                    alert("Bir hata oluştu: " + response.statusText);
-                }
-            } catch (error) {
-                console.error('Hata:', error);
-                alert("Bir hata oluştu!");
-            }
-        } else {
-            alert("Lütfen bir fotoğraf seçin.");
-        }
-    });
-</script>
- *@
-
-
-
+    @if (ViewBag.AIResult != null)
+    {
+        <h3>İşlenmiş Görsel:</h3>
+        <img src="@ViewBag.AIResult" alt="İşlenmiş Görsel" style="max-width: 500px;" />
+    }
+</div>

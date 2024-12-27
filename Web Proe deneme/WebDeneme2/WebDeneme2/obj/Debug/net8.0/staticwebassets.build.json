@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "09yos9fIW0/1LX4/8r2kyjG0a0//1e0CSEtbIK3LOFM=",
+  "Hash": "R4oYEJNPqn5ntZIUVHgvDvrv9jO2IrmMirYmRXzOedc=",
   "Source": "WebDeneme2",
   "BasePath": "_content/WebDeneme2",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\anasayfaresim.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\anasayfaresim2.jpg",
+      "SourceId": "WebDeneme2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\",
+      "BasePath": "_content/WebDeneme2",
+      "RelativePath": "img/anasayfaresim2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\anasayfaresim2.jpg"
     },
     {
       "Identity": "C:\\Users\\canor\\OneDrive\\Masaüstü\\Web Proe deneme\\WebDeneme2\\WebDeneme2\\wwwroot\\img\\hakkimizda.jpg",

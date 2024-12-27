@@ -6,12 +6,12 @@
     <title>@ViewData["Title"] - WebDeneme2</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    @* <link rel="stylesheet" href="~/WebDeneme2.styles.css" asp-append-version="true" /> *@
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm  box-shadow mb-3">
             <div class="container-fluid">
+                <a class="salonAd" href="/">CAN SALONU</a>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,6 +32,7 @@
                         </li>
                     </ul>
                     <div class="navbar-buttons col-md-4">
+                        <a class="btn" asp-controller="Home" asp-action="AI">Yapay Zeka Önerisi</a>
                         <a class="btn" asp-controller="Randevu" asp-action="Create">Randevu Al</a>
                         <a class="btn" asp-controller="GirisYap" asp-action="Index">Giriş Yap</a>
                     </div>

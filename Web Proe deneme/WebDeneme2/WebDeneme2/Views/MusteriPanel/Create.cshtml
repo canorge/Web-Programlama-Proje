@@ -42,30 +42,31 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // $(document).ready(function () {
-        //     // Hizmet seçildiğinde çalışanları getir
-        //     $('#HizmetId').change(function () {
-        //         var hizmetId = $(this).val();
+        document.getElementById("RandevuTarihi").addEventListener("input", function () {
+            const randevuTarihi = new Date(this.value);
+            const gun = randevuTarihi.getDay(); // 0: Pazar, 1: Pazartesi, ... 6: Cumartesi
+            const saat = randevuTarihi.getHours();
 
-        //         if (hizmetId) {
-        //             // Hizmet seçildiğinde çalışanları al
-        //             $.get('/Randevu/GetCalisanlarByHizmetId', { hizmetId: hizmetId }, function (calisanlar) {
-        //                 console.log(calisanlar);
-        //                 $('#CalisanId').empty(); // Önceki çalışanları temizle
-        //                 $('#CalisanId').append('<option value="">Bir Çalışan Seçin</option>');
+            if (randevuTarihi.getTime() < Date.now()) {
+                alert("Geçmiş tarihli randevu alınamaz!");
+                return;
+            }
 
-        //                 $.each(calisanlar, function (index, calisan) {
-        //                     $('#CalisanId').append('<option value="' + calisan.id + '">' + calisan.AdSoyad + '</option>');
-        //                 });
-        //             });
-        //         } else {
-        //             // Hizmet seçilmezse, çalışanları temizle
-        //             $('#CalisanId').empty();
-        //             $('#CalisanId').append('<option value="">Önce Hizmet Seçin</option>');
-        //         }
-        //     });
-        // });
+            if (gun === 0) {
+                alert("Pazar gününe randevu alınamaz!");
+                return;
+            }
 
+            if (saat < 10 || saat > 20) {
+                alert("Randevular sadece 10:00 - 20:00 arasında alınabilir!");
+            }
+
+           
+        });
+
+        
+
+        /*  AJAX REQUESt  */
         $(document).ready(function () {
             // Hizmet seçildiğinde çalışanları getir
             $('#HizmetId').change(function () {

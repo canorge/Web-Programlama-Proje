@@ -26,6 +26,13 @@ body {
     display: flex;
     justify-content: center; /* Navbar'ý ortala */
 }
+.navbar .salonAd {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #333; /* Yazý rengi */
+    text-decoration: none; /* Alt çizgi kaldýr */
+    /*transition: color 0.3s;*/ /* Renk deðiþimi animasyonu */
+}
 
 /* Navbar Linkleri */
 .navbar-nav {
@@ -179,6 +186,179 @@ footer {
         background-color: #fff; /* Çizgilerin rengi */
         transform: translateY(-50%); /* Yatay ortalama */
     }
+
+    /***  ANASAYFA CSS **/
+
+/* Slider stil */
+.anasayfa .carousel-item {
+    position: relative;
+}
+
+.anasayfa .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.anasayfa .carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.anasayfa .carousel-caption p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.anasayfa .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+}
+
+/* Hakkýmýzda ve Hizmetlerimiz */
+.anasayfa section {
+    padding: 80px 0;
+}
+
+.anasayfa h2.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.anasayfa p.lead {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+/* Buton stil */
+.anasayfa .btn-primary,
+.btn-outline-primary {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+    .anasayfa .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+/* Tüm sayfa genel yazý fontu */
+/*body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}*/
+
+
+/* Mobil Uyumluluk - Ekran boyutlarýna göre düzenlemeler */
+
+/* Küçük ekranlar (telefonlar) */
+@media (max-width: 767px) {
+    .anasayfa .carousel-caption h1 {
+        font-size: 2.5rem; /* Baþlýk boyutunu küçült */
+    }
+
+    .anasayfa .carousel-caption p {
+        font-size: 1.25rem; /* Paragraf boyutunu küçült */
+    }
+
+    .anasayfa .carousel-item img {
+        object-fit: cover;
+        height: 400px; /* Görselin yüksekliðini azalt */
+    }
+
+    .anasayfa section {
+        padding: 60px 20px; /* Bölüm içindeki boþluðu azalt */
+    }
+
+    .anasayfa h2.display-4 {
+        font-size: 2rem; /* Baþlýk boyutunu küçült */
+    }
+
+    .anasayfa p.lead {
+        font-size: 1rem; /* Paragraf boyutunu küçült */
+    }
+
+    .anasayfa .btn-primary, .btn-outline-primary {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+/* Orta ekranlar (tabletler) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .anasayfa .carousel-caption h1 {
+        font-size: 3rem; /* Baþlýk boyutunu orta ekranlarda ayarla */
+    }
+
+    .anasayfa .carousel-caption p {
+        font-size: 1.4rem; /* Paragraf boyutunu orta ekranlarda ayarla */
+    }
+
+    .anasayfa .carousel-item img {
+        object-fit: cover;
+        height: 500px; /* Görselin yüksekliðini biraz artýr */
+    }
+
+    .anasayfa section {
+        padding: 70px 20px; /* Bölüm içindeki boþluðu orta ekranlarda ayarla */
+    }
+
+    .anasayfa h2.display-4 {
+        font-size: 2.2rem; /* Baþlýk boyutunu orta ekranlarda ayarla */
+    }
+
+    .anasayfa p.lead {
+        font-size: 1.1rem; /* Paragraf boyutunu orta ekranlarda ayarla */
+    }
+
+    .anasayfa .btn-primary, .btn-outline-primary {
+        font-size: 1.1rem;
+        padding: 11px 28px;
+    }
+}
+
+/* Büyük ekranlar (masaüstü) */
+@media (min-width: 992px) {
+    .anasayfa .carousel-caption h1 {
+        font-size: 3.5rem; /* Baþlýk boyutunu büyük ekranlarda ayarla */
+    }
+
+    .anasayfa .carousel-caption p {
+        font-size: 1.5rem; /* Paragraf boyutunu büyük ekranlarda ayarla */
+    }
+
+    .anasayfa .carousel-item img {
+        object-fit: cover;
+        height: 600px; /* Görselin yüksekliðini büyük ekranlarda ayarla */
+    }
+
+    .anasayfa section {
+        padding: 80px 0; /* Bölüm içindeki boþluðu büyük ekranlarda ayarla */
+    }
+
+    .anasayfa h2.display-4 {
+        font-size: 2.5rem; /* Baþlýk boyutunu büyük ekranlarda ayarla */
+    }
+
+    .anasayfa p.lead {
+        font-size: 1.25rem; /* Paragraf boyutunu büyük ekranlarda ayarla */
+    }
+
+    .anasayfa .btn-primary, .btn-outline-primary {
+        font-size: 1.1rem;
+        padding: 12px 30px;
+    }
+}
+
 
 
 /*   HÝZMETLER CSS  */
@@ -738,4 +918,89 @@ footer {
     .btn-primary {
         font-size: 0.9rem;
     }
+}
+
+/**    AI ÖNERÝ   **/
+
+/* AIoneri Genel Stil */
+.AIoneri {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+    /* AIoneri Form Baþlýklarý */
+    .AIoneri label {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: inline-block;
+        color: #333;
+    }
+
+    /* AIoneri Form Elemanlarý */
+    .AIoneri input[type="file"],
+    .AIoneri select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    /* AIoneri Buton */
+    .AIoneri button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        font-size: 1.1rem;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+
+        .AIoneri button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    /* AIoneri Hata Mesajý */
+    .AIoneri p {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: red;
+    }
+
+    /* AIoneri Ýþlenmiþ Görsel */
+    .AIoneri h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    .AIoneri img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+/* AIoneri Mobil Uyumluluk */
+@media (max-width: 767px) {
+    .AIoneri {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+        .AIoneri button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
 }

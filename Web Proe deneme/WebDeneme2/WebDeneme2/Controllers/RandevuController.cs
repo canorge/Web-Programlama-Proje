@@ -36,11 +36,7 @@ namespace WebDeneme2.Controllers
         public async Task<IActionResult> Create(Randevu randevu,int id)
         {
             if (ModelState.IsValid)
-            {
-                // Kullanıcı kimliğini al
-                //var userEmail = User.Identity?.Name;
-
-               
+            {  
                 // Müşteriyi veritabanından bul
                 var musteri = await _context.Musteriler
                     .FirstOrDefaultAsync(m => m.Id==id);
@@ -48,10 +44,6 @@ namespace WebDeneme2.Controllers
                 {
                     return View();
                 }
-                //if (musteri == null )
-                //{
-                //    return Unauthorized();
-                //}
 
                 // Randevuya müşteri bilgisi ekle
                 randevu.MusteriId = musteri.Id;
